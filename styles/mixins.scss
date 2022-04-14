@@ -1,0 +1,19 @@
+@use "../styles/variables.scss"as *;
+
+@mixin tablet {
+  @media screen and (min-width: $tablet-size) {
+    @content;
+  }
+}
+
+@mixin breakpoint {
+  @media screen and (min-width: $midpoint-size) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-size) {
+    @content;
+  }
+}
