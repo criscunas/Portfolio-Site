@@ -1,0 +1,53 @@
+@use '../../styles/mixins.scss' as *;
+
+.header {
+  background-color: #28282B;
+
+  @include tablet {
+    
+  }
+
+  &__nav {
+    padding: 0rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 1.2rem;
+  }
+
+  Button {
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__tabnav {
+    display: none;
+
+      @include tablet {
+        display: block;
+      }
+  }
+
+  &__tabnav__list {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 1rem;
+
+    &:hover {
+      border-bottom: 3px solid red;
+    }
+  }
+
+}
+
