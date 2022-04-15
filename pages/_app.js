@@ -5,6 +5,8 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "./theme";
 import Header from "../components/Header/Header";
+import ProfileCard from "../components/ProfileCard/ProfileCard"; 
+import "../styles/globals.css"
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;
@@ -28,6 +30,7 @@ export default function MyApp(props) {
       </Head>
       <ThemeProvider theme={theme}>
         <Header />
+        <ProfileCard />
         <CssBaseline />
         <Component {...pageProps} />
       </ThemeProvider>

@@ -1,0 +1,46 @@
+
+.profile {
+  margin: 1rem;
+
+  &__card {
+    // padding: 1rem;
+  }
+
+  &__body {
+    padding: 0 1rem 0rem 1rem;
+    display: flex;  
+  }
+
+  &__bio {
+    margin-left: 0.3rem;
+    display: flex;
+    
+  }
+  &__bio__text {
+    line-height: 1.4rem;
+    padding: 0 0.5rem;
+  }
+
+  &__contact {
+    border: 1px solid grey;
+    margin: 1rem;
+  }
+
+  &__contact__header {
+    font-size: 1rem;
+    border-bottom: 1px solid gray;
+    padding: 0.2rem 0;
+    font-weight: 600;
+  }
+
+  &__contact__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    
+  }
+  &__grid {
+    padding: 0.5rem 0;
+  }
+}
