@@ -6,6 +6,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "./theme";
 import Header from "../components/Header/Header";
 import ProfileCard from "../components/ProfileCard/ProfileCard"; 
+import AboutInterests from "../components/AboutInterests/AboutInterests";
 import "../styles/globals.css"
 
 export default function MyApp(props) {
@@ -31,7 +32,9 @@ export default function MyApp(props) {
       <ThemeProvider theme={theme}>
         <Header />
         <ProfileCard />
+        <AboutInterests/>
         <CssBaseline />
+
         <Component {...pageProps} />
       </ThemeProvider>
     </React.Fragment>
