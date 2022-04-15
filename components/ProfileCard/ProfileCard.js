@@ -8,10 +8,11 @@ import {
   Box,
   Grid
 } from "@material-ui/core";
+import PersonIcon from "@mui/icons-material/Person";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
-import CodeIcon from "@mui/icons-material/Code";
+import TwitterIcon from "@mui/icons-material/Twitter";
 
 export default function ProfileCard() {
 
@@ -28,41 +29,45 @@ export default function ProfileCard() {
 
   return (
     <Box className={profileStyles.profile}>
-      <Card className={profileStyles.profile__card}>
-        <CardHeader title="Cristopher Cunas" />
+        <h1 className={profileStyles.profile__name} >Cristopher Cunas</h1>
         <div className={profileStyles.profile__body}>
           {profilePhoto()}
           <div className={profileStyles.profile__bio}>
             <div className={profileStyles.profile__bio__text}>
-              <p> "Welcome !"</p>
+              <p> "Welcome <span role="img" aria-label="thumbs-up"> 👋 </span> "</p>
               25 years old
-              <br></br>
+              <br/>
               Newark,
-              <br></br>
+              <br/>
               New Jersey
-              <br></br>
+              <br/>
               United States
+              <br />
+              <p className={profileStyles.profile__bio__status} > <span> <PersonIcon htmlColor='#eb8f34' /> </span> Online Now ! </p>
             </div>
           </div>
+        </div>
+        <div className={profileStyles.profile__current} > 
+          <p className={profileStyles.profile__current__mood} > <span className={profileStyles.profile__span} > Mood: </span> Productive <span role="img" aria-label="thumbs-up">👍 </span></p>
+          <p className={profileStyles.profile__current__blog} > <span className={profileStyles.profile__span} > View My: </span> Projects </p>
         </div>
         <Box className={profileStyles.profile__contact}>
           <p className={profileStyles.profile__contact__header} > Contacting Cris </p>
           <Grid container spacing={1} className = {profileStyles.profile__grid} >
             <Grid item xs={6}>
-              <p className={profileStyles.profile__contact__link} > <span> <EmailIcon/> </span> Message</p>
+              <p className={profileStyles.profile__contact__link} > <span> <EmailIcon htmlColor ="#03a1fc" /> </span> Message</p>
             </Grid>
             <Grid item xs={6}>
-              <p className={profileStyles.profile__contact__link}> <span> <GitHubIcon/> </span> Github</p>
+              <p className={profileStyles.profile__contact__link}> <span> <GitHubIcon htmlColor = "black"/> </span> Github</p>
             </Grid>
             <Grid item xs = {6}>
               <p className={profileStyles.profile__contact__link} > <span> <LinkedInIcon/> </span> LinkedIn</p>
             </Grid>
               <Grid item xs = {6}>
-              <p className={profileStyles.profile__contact__link} > <span> <CodeIcon/> </span> LeetCode</p>
+              <p className={profileStyles.profile__contact__link} > <span> <TwitterIcon htmlColor ="#03adfc" /> </span> Twitter</p>
             </Grid>
           </Grid>
         </Box>
-      </Card>
     </Box>
   );
 }

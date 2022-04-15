@@ -1,7 +1,8 @@
 @use '../../styles/mixins.scss' as *;
+@use '../../styles/variables.scss'as *;
 
 .header {
-  background-color: #28282B;
+  background-color: $myspace-darkblue;
 
   @include tablet {
     
@@ -43,10 +44,6 @@
     color: white;
     text-decoration: none;
     padding-bottom: 1rem;
-
-    &:hover {
-      border-bottom: 3px solid red;
-    }
   }
 
 }
