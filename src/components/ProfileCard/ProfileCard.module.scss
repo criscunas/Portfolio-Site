@@ -1,0 +1,87 @@
+@use '../../../styles/variables.scss' as *;
+@use '../../../styles/mixins.scss'as *;
+
+.profile {
+  margin: 1rem 0;
+
+  &__name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__body {
+    display: flex;
+  }
+
+  &__bio {
+    margin-left: 0.3rem;
+    display: flex;
+    
+  }
+  &__bio__text {
+    line-height: 1.4rem;
+    padding: 0 0.5rem;
+  }
+
+  &__bio__status {
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    color: green;
+  }
+
+  &__current {
+    padding: 1rem 0 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__span {
+    font-weight: bold;
+    color: black;
+    font-size: 0.9rem;
+  }
+
+  &__current__mood {
+    font-size: 0.9rem;
+  }
+
+  &__current__blog {
+    color: $myspace-darkblue;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+
+  &__contact {
+    border: 2px solid $myspace-blue;
+    margin: 0.5rem 0;
+  }
+
+  &__contact__header {
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-left: 0.5rem ;
+    color: white;
+    background-color: $myspace-blue;
+  }
+
+  &__contact__link {
+    display: flex;
+    padding-left: 0.5rem;
+    align-items: center;
+    gap: 0.4rem;
+    color: $myspace-darkblue;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__grid {
+    padding: 0.8rem 0;
+  }
+}
