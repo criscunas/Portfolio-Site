@@ -1,0 +1,50 @@
+@use "../../../styles/variables.scss" as *;
+
+.about {
+  margin: 1rem 0;
+  
+  &__interests {
+    border: 2px solid $myspace-blue;
+    margin: 1rem 0;
+  }
+
+  &__interests__title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-left: 0.5rem;
+    color: white;
+    background-color: $myspace-blue;
+  }
+
+  &__interests__front {
+    border: 2px solid white;
+  }
+
+  &__interests__back {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+
+  &__blurbs {
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+    background-color: #f9c56c;
+    color: #ED0707;
+    font-weight: bold;
+  }
+
+  &__bio {
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    
+  }
+
+  &__subhead {
+    font-size: 1rem;
+    padding-top: 1rem ;
+    color: $myspace-red;
+    font-weight: bold;
+  }
+}
