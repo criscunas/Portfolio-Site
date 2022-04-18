@@ -4,9 +4,9 @@ import Head from "next/head";
 import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "./theme";
-import Header from "../components/Header/Header";
-import ProfileCard from "../components/ProfileCard/ProfileCard"; 
-import AboutInterests from "../components/AboutInterests/AboutInterests";
+import Header from "../src/components/Header/Header";
+import ProfileCard from "../src/components/ProfileCard/ProfileCard"; 
+import AboutInterests from "../src/components/AboutInterests/AboutInterests";
 import "../styles/globals.css"
 
 export default function MyApp(props) {
@@ -30,9 +30,6 @@ export default function MyApp(props) {
         />
       </Head>
       <ThemeProvider theme={theme}>
-        <Header />
-        <ProfileCard />
-        <AboutInterests/>
         <CssBaseline />
 
         <Component {...pageProps} />
