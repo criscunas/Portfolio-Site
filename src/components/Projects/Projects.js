@@ -61,9 +61,9 @@ export default function Projects () {
             <Grid container spacing = {3} style = {{padding:"1rem 0.5rem 2rem 0.5rem"}}>
               <Grid style ={{display: "flex", justifyContent: "center"}} item xs ={4}>  <Avatar alt="react" src = "images/reactLogo.jpg" variant='square' style = {{height:55, width:61}}/> </Grid>
               <Grid style ={{display: "flex", justifyContent: "center"}} item xs ={4}>  <Avatar alt="cloudinary" src = 'images/cloudinary.jpg' variant='square' style = {{height:55, width:50}} /> </Grid>
-              <Grid style ={{display: "flex", justifyContent: "center"}} item xs ={4}>  <Avatar alt="mysql" src = 'images/MYSQLLogo.jpeg' variant='square' style = {{height:55, width:50}} /> </Grid>
+              <Grid style ={{display: "flex", justifyContent: "center"}} item xs ={4}>  <Avatar alt="mysql" src = 'images/MySQLLogo.jpg' variant='square' style = {{height:55, width:50}} /> </Grid>
               <Grid style ={{display: "flex", justifyContent: "center"}} item xs ={4}>  <Avatar alt="formik" src = 'images/formik.jpg' variant='square' style = {{height:55, width:50}}  /> </Grid>
-              <Grid style ={{display: "flex", justifyContent: "center"}} item xs ={4}>  <Avatar alt="knex" src = 'images/knex.jpg' variant='square' style = {{width: 80, height:55}}/></Grid>
+              <Grid style ={{display: "flex", justifyContent: "center"}} item xs ={4}>  <Avatar alt="knex" src = 'images/Knex.jpg' variant='square' style = {{width: 80, height:55}}/></Grid>
               <Grid style ={{display: "flex", justifyContent: "center"}} item xs ={4}>  <Avatar alt="express" src = 'images/express.jpg' variant='square' style = {{width: 100, height:50}}/> </Grid>
               <Grid style ={{display: "flex", justifyContent: "center"}} item xs ={4}>  <Avatar alt="sass" src = "images/sass.jpg" variant='square' style = {{height:55, width:55}}/> </Grid>
               <Grid style ={{display: "flex", justifyContent: "center"}} item xs ={4}>  <Avatar alt="materialui" src = "images/material.jpg" variant='square' style = {{height:55, width:40}}/> </Grid>

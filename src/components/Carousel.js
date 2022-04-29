@@ -36,6 +36,7 @@ const Carou = ({ imgs }) => {
             width={300}
             layout="responsive"
             height={250}
+            priority
           />
         );
       })}
