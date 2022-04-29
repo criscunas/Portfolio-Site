@@ -40,7 +40,7 @@ export default function Projects () {
       src: "/images/digiDiscover.jpg",
     },
     {
-      src: "/images/DigiDiscover2.jpg",
+      src: "/images/digiDiscover2.jpg",
     },
   ];
 

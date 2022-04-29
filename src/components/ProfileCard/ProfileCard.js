@@ -80,10 +80,10 @@ export default function ProfileCard() {
       <Card className={profileStyles.profile__tablet_card}>
         <Grid container>
           <div className={profileStyles.profile__tablet_body}>
-            <Grid item xs={4}>
+            <Grid item xs={5}>
               {profilePhoto()}
             </Grid>
-            <Grid item xs={8} className={profileStyles.profile__tablet_bio}>
+            <Grid item xs={7} className={profileStyles.profile__tablet_bio}>
               <p className={profileStyles.profile__name_tablet}>
                 Cristopher Cunas
               </p>

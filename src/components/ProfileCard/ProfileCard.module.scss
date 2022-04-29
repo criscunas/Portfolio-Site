@@ -8,13 +8,15 @@
     font-weight: bold;
     font-size: 1.2rem;
     margin-top: 1rem;
+    
   }
 
 
   &__card {
-    margin: 1rem 0;
-    padding: 0 1rem;
+    padding-left: 1rem;
     
+    // padding: 0 1rem;
+      // display: none;
     @include profile-card {
       display: none;
     }
@@ -23,6 +25,8 @@
 
   &__body {
     display: flex;
+    // padding-left: 1rem;
+    
     flex-wrap: nowrap;
     gap: 1.5rem;
     
