@@ -1,13 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Head from "next/head";
-import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import theme from "./theme";
-import Header from "../src/components/Header/Header";
-import ProfileCard from "../src/components/ProfileCard/ProfileCard"; 
-import AboutInterests from "../src/components/AboutInterests/AboutInterests";
-import "../styles/globals.css"
+import { Layout } from "../src/components/Layout/Layout";
+import "../styles/globals.css";
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;
@@ -29,11 +25,10 @@ export default function MyApp(props) {
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
       </Head>
-      <ThemeProvider theme={theme}>
         <CssBaseline />
-
-        <Component {...pageProps} />
-      </ThemeProvider>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
     </React.Fragment>
   );
 }

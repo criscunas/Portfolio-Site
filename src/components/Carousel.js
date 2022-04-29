@@ -6,7 +6,6 @@ const Carou = ({ imgs }) => {
   return (
     <Carousel
     navButtonsAlwaysInvisible={true}
-      autoPlay={false}
       indicatorContainerProps={{
         style: {
           padding: "0px",
@@ -25,19 +24,19 @@ const Carou = ({ imgs }) => {
         style: {
           bottom: "0",
           top: "50",
-          
-          
         },
       }}
     >
       {imgs.map((item, i) => {
         return (
           <Image
+            key = {i}
             src={item.src}
             alt="profile-photo"
             width={300}
             layout="responsive"
             height={250}
+            priority
           />
         );
       })}
