@@ -1,0 +1,21 @@
+@use '../styles/mixins.scss' as *;
+
+
+.home {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  @include tablet {
+    display: flex;
+    // padding: 1.5rem 2rem;    
+    gap: 2rem;
+  }
+  
+  &__top {
+    flex: 0.7;
+  }
+
+  &__bottom {
+    flex:1;
+  }
+}

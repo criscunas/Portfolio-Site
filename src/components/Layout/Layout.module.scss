@@ -1,0 +1,24 @@
+@use '../../../styles/mixins.scss' as *;
+
+.layout {
+  
+  font-family: 'Asap',sans-serif;
+  // max-width: 1000px;
+
+  &__container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  &__content {
+    margin: 1rem;
+    
+    
+    @include tablet {
+      margin: 1.5rem ;
+    }
+  }
+
+
+  
+}

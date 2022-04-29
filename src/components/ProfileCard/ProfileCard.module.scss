@@ -1,0 +1,132 @@
+@use '../../../styles/variables.scss' as *;
+@use '../../../styles/mixins.scss'as *;
+
+.profile {
+  margin: 1rem 0;
+
+  &__name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+
+
+  &__card {
+    margin: 1rem 0;
+    padding: 0 1rem;
+    
+    @include profile-card {
+      display: none;
+    }
+  }
+
+
+  &__body {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+    
+  }
+
+  
+
+  &__tablet_card {
+    
+    display: none;
+
+    @include profile-card {
+      display: block;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__tablet_body {
+    display: flex;
+    padding: 1.5rem 1rem;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  
+  &__name_tablet {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  &__welcome_tablet {
+    display: flex;
+    gap: 1rem;
+    padding: 0.2rem 0;
+  }
+
+  &__location_tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  
+
+
+  &__bio__status {
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    color: green;
+  }
+
+  &__current {
+    padding-top: 1rem;
+  }
+
+  &__span {
+    font-weight: bold;
+    color: black;
+    font-size: 0.9rem;
+  }
+
+  &__current__mood {
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+    
+  }
+
+  &__current__blog {
+    color: $myspace-darkblue;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+
+  &__contact {
+    border: 2px solid $myspace-blue;
+    margin: 0.5rem 0;
+    background-color: white;
+  }
+
+  &__contact__header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 0.5rem ;
+    color: white;
+    background-color: $myspace-blue;
+  }
+
+  &__contact__link {
+    display: flex;
+    text-decoration: none;
+    padding-left: 0.5rem;
+    margin: 0.3rem 0;
+    align-items: center;
+    gap: 0.4rem;
+    color: $myspace-darkblue;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__grid {
+    padding: 0.8rem 0;
+  }
+}
