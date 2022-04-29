@@ -1,7 +1,7 @@
 ---
 title: 'The Post Coding Bootcamp'
 excerpt: 'The Bootcamp in Coding Bootcamps is not a exaggeration. Before starting at BrainStation back in January, I remember thinking to myself Id be free after class.'
-date: '2022-03-29T05:35:07.322Z'
+date: '2022-04-29T05:35:07.322Z'
 author: Cristopher Cunas
 ---
 
