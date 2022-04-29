@@ -19,7 +19,7 @@
   &__header {
     font-size: 1rem;
     font-weight: 500;
-  
+    
     @include beforeTablet {
       padding: 0 1rem;
     }
@@ -27,7 +27,11 @@
 
   &__author {
     font-size: 1.1rem;
-    
+    padding-left: 0.5rem;
+
+    @include tablet {
+      padding-left: 0.8rem;
+    }
   }
 
   &__title {
@@ -56,7 +60,7 @@
     }
 
     @include tablet {
-      
+      margin-top: 2rem;
     }
     
     p {
