@@ -1,0 +1,79 @@
+@use '../styles/mixins.scss'as *;
+
+.post {
+  
+  max-width: 768px;
+  margin: 2rem auto 3rem auto;
+
+  @include tablet {
+    margin-top: 3rem;
+  }
+
+  &__avatar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+  }
+
+  &__header {
+    font-size: 1rem;
+    font-weight: 500;
+  
+    @include beforeTablet {
+      padding: 0 1rem;
+    }
+  }
+
+  &__author {
+    font-size: 1.1rem;
+    
+  }
+
+  &__title {
+    margin: 2rem 0 0 0 ;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+
+  &__date {
+    padding-top: 1rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+  }
+
+  &__content {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+
+    @include beforeTablet {
+      padding: 0 1rem;
+    }
+
+    @include tablet {
+      
+    }
+    
+    p {
+      margin: 1rem 0;
+    }
+  }
+
+  &__paper {
+    padding: 1.5rem 1rem 2rem 1rem;
+
+    @include tablet {
+    padding: 2rem 1rem 4rem 1rem;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    gap: 1rem;
+  }
+}

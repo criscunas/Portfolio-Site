@@ -4,20 +4,18 @@
 .home {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 1rem;
 
   @include tablet {
     display: flex;
-    padding: 1.5rem 2rem;    
+    // padding: 1.5rem 2rem;    
     gap: 2rem;
   }
   
   &__top {
-    
-
+    flex: 0.7;
   }
 
   &__bottom {
-
+    flex:1;
   }
 }
