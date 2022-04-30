@@ -4,7 +4,6 @@ import {
   Card,
   Box,
   Grid,
-  CardActions
 } from "@material-ui/core";
 import PersonIcon from "@mui/icons-material/Person";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -13,11 +12,10 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import CodeIcon from "@mui/icons-material/Code";
 import Link from 'next/link';
-import { useRef } from 'react';
+
 
 export default function ProfileCard() {
 
-  const myRef = useRef(null)
 
   const profilePhoto = () => {
     return (
