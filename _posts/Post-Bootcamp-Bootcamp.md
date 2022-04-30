@@ -2,7 +2,7 @@
 title: 'The Post Coding Bootcamp'
 excerpt: 'The Bootcamp in Coding Bootcamps is not a exaggeration. Before starting at BrainStation back in January, I remember thinking to myself Id be free after class.'
 date: '2022-04-29T05:35:07.322Z'
-author: 'Cristopher Cunas'
+author: Cristopher Cunas
 ---
 
 The Bootcamp in Coding Bootcamp perfectly describes what it is. Before starting at BrainStation back in January, I remember thinking to myself I'd be free after class and on the weekends to go train Jiu Jitsu as I have been doing consistently for 5 years. Boy was I in for a surprise. Before enrolling in any full-time program, you should really consider the time that will be going into any Full Stack Coding Bootcamp. I would really advise against working during that period. While not everyone has the luxury of doing so, it will most definitely benefit you. Class typically runs from 10am to 5-6pm and consists of lectures, code-alongs & group work. You will be tackling new material everyday and have weekly projects. For those 3 months, your computer will be your best friend. Trying to squeeze in a job will only make this journey 100 times harder. It will feel overwhelming at times and that's okay. The great thing about bootcamps is the people you get to work with every day and the instructors that are available to you. They become somewhat of a support system. I can't recall one negative interaction with any classmates or instructors in my program. You all share a common goal of either wanting to start or transition into a career in tech. For any of the problems that you'll run into over those 3 months, whether it be technical or personal, reach out to your classmates as they'll most likely be facing a similar issue.

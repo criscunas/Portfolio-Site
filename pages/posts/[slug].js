@@ -7,7 +7,6 @@ import PostBody from '../../src/components/PostBody/PostBody';
 import PostHeader from "../../src/components/PostHeader/PostHeader";
 import { Box,Paper } from "@material-ui/core";
 import postStyles from '../../styles/Posts.module.scss';;
-import Link from 'next/link';
 
 export async function getStaticPaths() {
   const posts = getAllPosts(["slug"]);
