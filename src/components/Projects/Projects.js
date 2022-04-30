@@ -46,7 +46,7 @@ export default function Projects () {
 
   return (
     <>
-      <Box className={projectStyles.project}>
+      <Box id = "projects" className={projectStyles.project}>
         <h1 className={projectStyles.project__header}> Projects </h1>
         <Card className={projectStyles.project__section}>
           <CardHeader title = "Digi" titleTypographyProps={{variant: 'h5'}} avatar = {NavTo('https://github.com/criscunas/digi-client')} />

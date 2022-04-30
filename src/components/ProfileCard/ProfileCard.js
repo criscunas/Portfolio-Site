@@ -4,6 +4,7 @@ import {
   Card,
   Box,
   Grid,
+  CardActions
 } from "@material-ui/core";
 import PersonIcon from "@mui/icons-material/Person";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -12,9 +13,11 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import CodeIcon from "@mui/icons-material/Code";
 import Link from 'next/link';
+import { useRef } from 'react';
 
 export default function ProfileCard() {
 
+  const myRef = useRef(null)
 
   const profilePhoto = () => {
     return (
@@ -22,10 +25,17 @@ export default function ProfileCard() {
         src="/images/profile.jpg"
         alt="profile-photo"
         width={130}
-        height={140}
+        height={150}
       />
     );
   }
+
+  const scrollToProjects = () => {
+    const section = document.getElementById('projects')
+    section.scrollIntoView({behavior:'smooth', block: 'start'});
+  }
+  
+
 
   const profileBio = () => {
     return (
@@ -44,7 +54,7 @@ export default function ProfileCard() {
         <br />
         United States
         <br />
-        <p className={profileStyles.profile__bio__status}>
+        <p className={profileStyles.profile__card_online}>
           <span>
             <PersonIcon htmlColor="#eb8f34" />{" "}
           </span>
@@ -59,46 +69,49 @@ export default function ProfileCard() {
       <Card className={profileStyles.profile__card}>
         <Grid container spacing={1}>
           <Grid item xs={12}>
-            <p className={profileStyles.profile__name}> Cristopher Cunas </p>
+            <p className={profileStyles.profile__card_name}> Cristopher Cunas </p>
           </Grid>
-          <Grid item xs={12} className={profileStyles.profile__body}>
+          <Grid item xs={12} className={profileStyles.profile__card_body}>
             <div className={profileStyles.profile__image}>{profilePhoto()}</div>
             {profileBio()}
           </Grid>
           <Grid item xs={12}>
-            <p className={profileStyles.profile__current__mood}>
-              <span className={profileStyles.profile__span}> Mood: </span>
-              Productive
+            <p className={profileStyles.profile__card_mood}>
+              <span className={profileStyles.profile__card_mood_span}> Mood: </span>
               <span role="img" aria-label="thumbs-up">
-                👍
+                Productive 👍
               </span>
             </p>
+            <h1 className={profileStyles.profile__card_footer}>
+              View my:
+              <span className={profileStyles.profile__footer_link} onClick = {scrollToProjects} > Projects </span>{" "}
+            </h1>
           </Grid>
         </Grid>
       </Card>
 
       <Card className={profileStyles.profile__tablet_card}>
         <Grid container>
-          <div className={profileStyles.profile__tablet_body}>
+          <div className={profileStyles.profile__tablet_card_body}>
             <Grid item xs={5}>
               {profilePhoto()}
             </Grid>
-            <Grid item xs={7} className={profileStyles.profile__tablet_bio}>
-              <p className={profileStyles.profile__name_tablet}>
+            <Grid item xs={7} className={profileStyles.profile__tablet_card_bio}>
+              <p className={profileStyles.profile__tablet_card_name}>
                 Cristopher Cunas
               </p>
-              <div className={profileStyles.profile__welcome_tablet}>
+              <div className={profileStyles.profile__tablet_card_welcome}>
                 <p>
                   Welcome <span aria-label="wave">👋</span>
                 </p>
                 <p>
-                  Mood: Productive <span aria-label="thumbs-up"> 👍 </span>{" "}
+                  Mood: Working <span aria-label="thumbs-up"> 👍 </span>{" "}
                 </p>
               </div>
-              <div className={profileStyles.profile__location_tablet}>
+              <div className={profileStyles.profile__tablet_card_location}>
                 <p> 25 </p>
                 <p> Newark, NJ, United States </p>
-                <p className={profileStyles.profile__bio__status}>
+                <p className={profileStyles.profile__card_online}>
                   <span>
                     <PersonIcon htmlColor="#eb8f34" />{" "}
                   </span>
@@ -108,6 +121,10 @@ export default function ProfileCard() {
             </Grid>
           </div>
         </Grid>
+        <h1 className={profileStyles.profile__tablet_card_footer}>
+          View my :
+          <span onClick = {scrollToProjects} className={profileStyles.profile__footer_link}> Projects </span>{" "}
+        </h1>
       </Card>
 
       <Box className={profileStyles.profile__contact}>

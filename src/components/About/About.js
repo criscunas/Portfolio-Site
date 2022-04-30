@@ -1,4 +1,4 @@
-import { Box, Grid, styled, Card , CardHeader, CardContent, Avatar} from "@material-ui/core";
+import { Box, Grid, styled, Card , CardHeader, CardActions, Avatar} from "@material-ui/core";
 import aboutStyles from "./About.module.scss";
 import Image from "next/image";
 import {useRouter} from 'next/router';
@@ -140,16 +140,16 @@ export default function AboutInterests({blogs}) {
                 onClick={() => Router.push(`/posts/${slug}`)}
                 className={aboutStyles.about__blogs_post}
               >
-                {" "}
                 {excerpt.slice(0, 125)}....{" "}
               </p>
-              <p className={aboutStyles.about__blogs_footer}>
-                
-                Click above to read more
-                <span role="img" aria-label="pointer">
-                  👆🏼
-                </span>{" "}
-              </p>
+              <CardActions>
+                <p className={aboutStyles.about__blogs_footer}>
+                  Click above to read more
+                  <span role="img" aria-label="pointer">
+                    👆🏼
+                  </span>{" "}
+                </p>
+              </CardActions>
             </Card>
           );
         })}

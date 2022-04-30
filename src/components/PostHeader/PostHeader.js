@@ -10,7 +10,7 @@ export default function PostHeader({ title, date, author }) {
   
   const NavTo = (url , avatar) => {
     return (
-      <Link href={url} passHref={true}>
+      <Link as={url}>
         <a>
           {avatar}
         </a>

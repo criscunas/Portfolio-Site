@@ -4,35 +4,66 @@
 .profile {
   margin: 1rem 0;
 
-  &__name {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    
-  }
-
-
   &__card {
     padding-left: 1rem;
-    
-    // padding: 0 1rem;
-      // display: none;
+
     @include profile-card {
       display: none;
     }
   }
-
-
-  &__body {
-    display: flex;
-    // padding-left: 1rem;
-    
-    flex-wrap: nowrap;
-    gap: 1.5rem;
-    
+  
+  &__card_name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  
   }
 
+  &__card_body {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1.2rem;
   
+  }
+
+  &__card_footer {
+    padding-bottom: 0.5rem;
+    font-style: italic;
+  }
+
+  &__card_footer_text {
+    margin-left: 0.3rem;
+    font-style: normal;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__card_online {
+    font-size: 0.6rem;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    margin-top: 0.5rem;
+    color: green;
+  }
+
+  &__card_mood {
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+  }
+  
+  &__card_mood_span {
+    font-weight: bold;
+    color: black;
+    font-size: 0.9rem;
+  }
+
+  &__card_footer{
+    padding: 0.5rem 0 1rem 0;
+    font-size: 0.9rem;
+  }
 
   &__tablet_card {
     
@@ -44,55 +75,52 @@
     }
   }
 
-  &__tablet_body {
+  &__tablet_card_body {
     display: flex;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1rem 1rem 1rem;
     align-items: center;
     gap: 1rem;
+
+    @include breakpoint {
+      padding: 2rem 1.5rem 1.5rem 1.5rem;
+    }
   }
 
   
-  &__name_tablet {
+  &__tablet_card_name {
     font-weight: bold;
     font-size: 1.2rem;
   }
 
-  &__welcome_tablet {
+  &__tablet_card_welcome {
     display: flex;
+    font-weight: 400;
     gap: 1rem;
     padding: 0.2rem 0;
   }
 
-  &__location_tablet {
+  &__tablet_card_welcome {
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
   }
   
+  &__tablet_card_footer {
+    padding: 0 1rem 1rem 1rem;  
+    font-style: italic;
 
-
-  &__bio__status {
-    font-size: 0.6rem;
-    display: flex;
-    align-items: center;
-    margin-top: 0.5rem;
-    color: green;
-  }
-
-  &__current {
-    padding-top: 1rem;
-  }
-
-  &__span {
-    font-weight: bold;
-    color: black;
-    font-size: 0.9rem;
-  }
-
-  &__current__mood {
-    font-size: 0.9rem;
-    padding: 0.5rem 0;
+    @include tablet {
+      display: none;
+    }
     
+  }
+
+
+  &__footer_link {
+    margin-left: 0.2rem;
+    font-weight: bold;
+    font-style: normal;
+    cursor: pointer;
   }
 
   &__current__blog {
