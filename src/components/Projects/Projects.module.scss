@@ -7,6 +7,11 @@
   flex-direction: column;
   gap: 1rem;
   
+  &__section {
+    margin: 1rem 0;
+  }
+
+
   &__header {
     padding: 0 0.5rem;
     background-color: #f9c56c;
