@@ -29,8 +29,15 @@
   &__card_excerpt {
     padding: 0 1rem;
   }
+  
   &__card_footer {
     padding: 1rem 0 0.5rem 1rem;
     color: $myspace-blue;    
+    cursor: pointer;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+
   }
 }

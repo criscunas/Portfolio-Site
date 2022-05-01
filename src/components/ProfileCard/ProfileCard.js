@@ -12,10 +12,12 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import CodeIcon from "@mui/icons-material/Code";
 import Link from 'next/link';
+import {useRouter} from 'next/router';
 
 
 export default function ProfileCard() {
 
+  const Router = useRouter();
 
   const profilePhoto = () => {
     return (
@@ -82,7 +84,8 @@ export default function ProfileCard() {
             </p>
             <h1 className={profileStyles.profile__card_footer}>
               View my:
-              <span className={profileStyles.profile__footer_link} onClick = {scrollToProjects} > Projects </span>{" "}
+              <span className={profileStyles.profile__footer_projects} onClick = {scrollToProjects} > Projects ||</span>{" "}
+              <span onClick = {() => Router.push('/blogs')} className={profileStyles.profile__footer_blogs}> Blogs </span>{" "}
             </h1>
           </Grid>
         </Grid>
@@ -121,7 +124,9 @@ export default function ProfileCard() {
         </Grid>
         <h1 className={profileStyles.profile__tablet_card_footer}>
           View my :
-          <span onClick = {scrollToProjects} className={profileStyles.profile__footer_link}> Projects </span>{" "}
+          <span onClick = {scrollToProjects} className={profileStyles.profile__footer_projects}> Projects || </span>{" "}
+          <span onClick = {() => Router.push('/blogs')} className={profileStyles.profile__footer_blogs}> Blogs </span>{" "}
+          
         </h1>
       </Card>
 
