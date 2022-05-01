@@ -14,7 +14,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
-          <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;1,500&family=Noto+Sans:wght@200;300;400&display=swap" as="preload" rel="stylesheet"></link>
+          <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;1,500&family=Noto+Sans:wght@200;300;400&display=swap" as="style" rel="stylesheet preload prefetch" type = "text/css"></link>
         </Head>
         <body>
           <Main />

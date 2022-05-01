@@ -9,8 +9,7 @@ const InterestsGrid = styled(Grid)({
   color: (props) => props.color,
   fontWeight: (props) => props.font,
   backgroundColor: (props) => props.bg,
-  border: "2.5px solid white",
-  lineHeight: 2
+  borderLeft:"4px solid white"
 });
 
   const profilePhoto = () => {
