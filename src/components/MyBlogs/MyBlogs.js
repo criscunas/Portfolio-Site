@@ -14,7 +14,7 @@ const MyBlogs = ({posts}) => {
       <Grid container column spacing = {2} >
         {posts.map(({ date, excerpt, title, slug }, i) => {
           return (
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} sm={6} key = {i}>
               <Card key={i} className={blogStyles.blogs__card}>
                 <h2 className={blogStyles.blogs__card_title}>{title}</h2>
                 <p className={blogStyles.blogs__card_date}>
