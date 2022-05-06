@@ -1,13 +1,14 @@
 @use '../../../styles/mixins.scss' as *;
 
 .layout {
-  
+  background-color: #202023;
   font-family: 'Asap',sans-serif;
   // max-width: 1000px;
 
   &__container {
     max-width: 1024px;
     margin: 0 auto;
+    // background-color: #202023;
   }
 
   &__content {
@@ -19,6 +20,4 @@
     }
   }
 
-
-  
 }

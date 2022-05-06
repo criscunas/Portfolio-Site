@@ -1,25 +1,34 @@
 @use '../../../styles/mixins.scss' as *;
 @use '../../../styles/variables.scss'as *;
 
+
+
 .header {
-  background-color: $myspace-blue;
-  padding: 1rem ;
-  
-  @include tablet {
-    padding: 1.5rem;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+
+  @include beforeTablet {
+    margin: 0 auto;
+    
   }
 
-  &__nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  &__hamburger {
+
+    @include beforeTablet {
+      display: none;
+    }
   }
 
-  &__title {
-    color: #fff;
+  &__text {
+    color: #E1CE7A;
+    font-weight: 600;
+    padding-left: 1rem;
     display: flex;
     align-items: center;
-    gap: 0.3rem;
+    font-size: 1rem;
     cursor: pointer;
   }
 
@@ -28,5 +37,63 @@
     font-weight: bolder;
   }
 
+  &__nav {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  
+    li {
+      align-self: flex-start;
+      color: whitesmoke;
+      font-weight: 500;
+      padding: 0 0.5rem;
+    }
+    
+  }
+
+  &__head {
+    
+    ul {
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: #0d1a2fd1;
+    }
+  }
+
+  &__tablet {
+    color: white;
+    display: none;    
+
+    @include beforeTablet {
+      display: block;
+    }
+
+    ul {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+  }
+
+  &__tablet_list {
+    
+    a {
+      color: whitesmoke;
+      font-weight: 500;
+      font-size: 1rem;
+      cursor:pointer;
+      text-decoration: none;
+      
+    }
+
+    @include beforeTablet {
+      padding: 1rem;
+
+      &:hover {
+        border-bottom: 1px solid white;
+      }
+    }
+  }
 }
 

@@ -1,6 +1,6 @@
 ---
 title: 'The Post Coding Bootcamp'
-excerpt: 'The Bootcamp in Coding Bootcamp perfectly describes what it is. Before starting at BrainStation back in January, I remember thinking to myself I would be free after class and on the weekends'
+excerpt: 'The Bootcamp in Coding Bootcamp perfectly describes what it is. Before starting at BrainStation back in January, I remember thinking to myself I would be free after class and on the weekends to go train Jiu Jitsu as I have been doing consistently for 5 years.'
 date: '2022-04-29T05:35:07.322Z'
 author: Cristopher Cunas
 ---

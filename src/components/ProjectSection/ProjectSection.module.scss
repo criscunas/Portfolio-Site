@@ -1,0 +1,150 @@
+@use '../../../styles/mixins.scss'as *;
+
+.project {
+
+  margin: 0.5rem;
+
+  @include beforeTablet {
+    margin: 1rem;
+  }
+
+  &__header {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    padding: 1rem 0rem 1.5rem 0rem;
+
+    @include beforeTablet {
+      padding: 1.5rem 0 2rem 0;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__section {
+    margin-bottom: 1.5rem;
+
+    @include beforeTablet {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+
+    @include beforeTablet {     
+      // padding: 1rem;
+    }
+  }
+
+  &__title_text {
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: 600;
+
+    @include beforeTablet {
+      padding: 1.5rem;
+      font-size: 1.8rem;
+    }
+
+  }
+
+  &__title_link {
+    padding: 0rem 1rem 1rem 1rem;
+    
+    @include beforeTablet {
+        padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
+      font-weight: bold;
+      color: #111110;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__main {
+    padding: 0rem 1rem 1rem 1rem;
+
+    @include beforeTablet {
+      padding: 0rem 1.5rem 1.5rem 1.5rem;
+    }
+  }
+
+  &__main_text {
+    line-height: 1.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+
+    @include beforeTablet {
+      font-size: 1rem;
+      line-height: 1.7rem;
+    }
+  }
+
+  &__main_subhead {
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 1rem 0;
+    
+    @include beforeTablet {
+      font-size: 1.2rem;
+      padding: 1.5rem 0 1rem 0;
+    }
+  }
+
+  &__main_list {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    @include beforeTablet {
+      gap: 1rem;
+      font-size: 0.9rem;
+    }
+  }
+
+  &__main_footer {
+    margin-top: 1.5rem;
+    text-align: right;
+
+    @include beforeTablet {
+      margin-top: 2rem;
+    }
+  }
+
+  &__button {
+    text-transform: none;
+    font-size: 0.9rem;
+  }
+
+  &__main_personal {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    
+    @include beforeTablet {
+      margin-top: 2rem;
+      font-size: 1rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      justify-content: center;
+      display: flex;
+      gap: 0.5rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+    }
+  }
+}
