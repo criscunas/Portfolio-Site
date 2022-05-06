@@ -74,8 +74,16 @@ export default function Header() {
                 <a>Home</a>
               </Link>
             </MenuItem>
-            <MenuItem onClick={handleClose}>Projects</MenuItem>
-            <MenuItem onClick={handleClose}>Blog</MenuItem>
+            <MenuItem onClick={handleClose}>
+              <Link href="/projects">
+                <a>Projects</a>
+              </Link>
+            </MenuItem>
+            <MenuItem onClick={handleClose}>
+              <Link href="/blogs">
+                <a>Blogs</a>
+              </Link>
+            </MenuItem>
           </div>
         </Menu>
       </div>

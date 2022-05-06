@@ -28,8 +28,7 @@ const ProfileCard = () => {
         <Grid item xs={12} sm={4}>
           <Suspense
             fallback={
-              <Grid item xs ={12} sm ={4}>
-                
+              <Grid item xs={12} sm={4} className={profileStyles.profile__spinner}>
                 <CircularProgress />{" "}
               </Grid>
             }

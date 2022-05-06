@@ -103,6 +103,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    font-weight: 400;
 
     @include beforeTablet {
       gap: 1rem;
