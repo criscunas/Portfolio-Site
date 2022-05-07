@@ -33,6 +33,9 @@ export default function Projects() {
     {
       src: "/images/MealDishr2.jpg",
     },
+    {
+      src:"/images/mealdish3.png"
+    }
   ];
 
   let items2 = [
@@ -96,7 +99,7 @@ export default function Projects() {
             {" "}
             <Avatar
               alt="react"
-              src="images/ReactLogo.jpg"
+              src="images/reactlogo.png"
               variant="square"
               style={{ height: 70, width: 80 }}
             />{" "}
@@ -262,7 +265,7 @@ export default function Projects() {
             {" "}
             <Avatar
               alt="react"
-              src="images/ReactLogo.jpg"
+              src="images/reactlogo.png"
               variant="square"
               style={{ height: 65, width: 60 }}
             />{" "}
