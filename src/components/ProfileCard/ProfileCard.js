@@ -7,42 +7,65 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from '@mui/icons-material/Twitter';
 import Link from 'next/link';
-import {useRouter} from 'next/router';
 import CircularProgress from "@mui/material/CircularProgress";
-
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import { PresentationControls } from "@react-three/drei";
 import { Environment } from "@react-three/drei";
+import { Stars } from "@react-three/drei";
 import React, { Suspense } from "react";
-
+import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 
 const Robot = React.lazy(() => import('../Robot'));
 
 const ProfileCard = () => {
   
+  const Mailto = ({email,subject,body,...props}) => {
+    return (
+      <a href={`mailto:${email}?subject=${subject || ""}&body=${body || ""}`}>
+        {props.children}
+      </a>
+    );
+  } 
   
+
   return (
     <Box className={profileStyles.profile}>
       <Grid container column spacing={1}>
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={12}>
           <Suspense
             fallback={
-              <Grid item xs={12} sm={4} className={profileStyles.profile__spinner}>
-                <CircularProgress />{" "}
+              <Grid
+                item
+                xs={12}
+                sm={12}
+                className={profileStyles.profile__spinner}
+              >
+                <CircularProgress color="warning" />
               </Grid>
             }
           >
             <div style={{ height: "170px" }}>
               <Canvas>
                 <Environment preset="city" />
-                <OrbitControls autoRotate="true" autoRotateSpeed={10} />
+                <Stars
+                  radius={100}
+                  depth={20}
+                  count={5000}
+                  factor={6}
+                  saturation={1}
+                  fade
+                />
+                <OrbitControls
+                  autoRotate="true"
+                  autoRotateSpeed={5}
+                  enableZoom="false"
+                />
                 <Robot />
               </Canvas>
             </div>
           </Suspense>
         </Grid>
-        <Grid item xs={12} sm={8} className={profileStyles.profile__bio}>
+        <Grid item xs={12} className={profileStyles.profile__bio}>
           <h1 className={profileStyles.profile__welcome}>
             Hey I'm Cris
             <span role="img" aria-label="thumbs-up">
@@ -71,6 +94,11 @@ const ProfileCard = () => {
                 <TwitterIcon fontSize="large" htmlColor="white" />
               </a>
             </Link>
+              <div className={profileStyles.profile__contact__link}>
+                <Mailto email="criscunas@criscunas.dev">
+                  <AlternateEmailIcon fontSize="large" htmlColor="white" />
+                </Mailto>
+              </div>
           </div>
         </Grid>
       </Grid>

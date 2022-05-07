@@ -48,16 +48,19 @@ export default function Digi() {
           Create a tech focused social platform where users can create, share &
           connect with other.
         </p>
-
+        <h1 className={digiStyles.digi__about_head}>Tech</h1>
+        <p className={digiStyles.digi__about_description}>
+        React, Next.js, Material UI, SCSS, iron-session, MySQL, Knex.js, JWT, Express, AWS, Digital Ocean.
+        </p>
         <h1 className={digiStyles.digi__about_head}>My Role</h1>
         <p className={digiStyles.digi__about_description}>
-          As this was a solo project, I handled everything.
-          These tasks included:
+          As this was a solo project, I handled everything. These tasks
+          included:
         </p>
         <Grid container className={digiStyles.digi__about_list} spacing={2}>
           <Grid item xs={12} sm={6}>
             <li className={digiStyles.digi__about_list_item}>
-            Creating SQL Database and setting up AWS RDS.
+              Creating SQL Database and setting up AWS RDS.
             </li>
           </Grid>
 
@@ -90,7 +93,8 @@ export default function Digi() {
 
           <Grid item xs={12} sm={6}>
             <li className={digiStyles.digi__about_list_item}>
-            Creating digital ocean droplet to host server.</li>
+              Creating digital ocean droplet to host server.
+            </li>
           </Grid>
         </Grid>
       </div>

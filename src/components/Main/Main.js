@@ -6,7 +6,7 @@ import ProjectSection from "../ProjectSection/ProjectSection";
 
 export const Main = ({ blogs }) => {
   return (
-    <div className={mainStyles.main}>
+    <div>
       <ProfileCard />
       <AboutMe />
       <ProjectSection />

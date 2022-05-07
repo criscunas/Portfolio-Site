@@ -1,16 +1,11 @@
 import projectStyle from "./ProjectSection.module.scss";
 import {
   Box,
-  Avatar,
-  Grid,
   Button,
   Card,
-  CardHeader,
-  CardContent,
 } from "@material-ui/core";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import Link from "next/link";
-import Carou from "../Carousel";
+import Link from "next/link";;
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
 import {useRouter} from "next/router";
 

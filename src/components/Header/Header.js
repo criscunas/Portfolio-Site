@@ -81,7 +81,7 @@ export default function Header() {
             </MenuItem>
             <MenuItem onClick={handleClose}>
               <Link href="/blogs">
-                <a>Blogs</a>
+                <a>Blog</a>
               </Link>
             </MenuItem>
           </div>

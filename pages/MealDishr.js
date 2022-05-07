@@ -38,6 +38,10 @@ export default function MealDishr() {
           prepare the meal of your choosing.
         </p>
 
+        <h1 className={mealStyles.mealdishr__about_head}>Tech</h1>
+        <p className={mealStyles.mealdishr__about_description}>
+        React, Material UI, SCSS.
+        </p>
         <h1 className={mealStyles.mealdishr__about_head}>My Role</h1>
         <p className={mealStyles.mealdishr__about_description}>
           As this was a paired programming project, my partner and I split our

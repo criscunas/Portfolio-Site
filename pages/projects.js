@@ -96,7 +96,7 @@ export default function Projects() {
             {" "}
             <Avatar
               alt="react"
-              src="images/reactLogo.jpg"
+              src="images/ReactLogo.jpg"
               variant="square"
               style={{ height: 70, width: 80 }}
             />{" "}
@@ -124,7 +124,7 @@ export default function Projects() {
             {" "}
             <Avatar
               alt="mysql"
-              src="images/MySQlLogo.png"
+              src="images/MySqlLogo.png"
               variant="square"
               style={{ height: 70, width: 80 }}
             />{" "}

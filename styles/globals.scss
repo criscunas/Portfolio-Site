@@ -1,3 +1,5 @@
+@use '../styles/mixins.scss'as *;
+
 html,
 body,
 div,
@@ -135,8 +137,13 @@ html {
 
 canvas {
   height: 250px !important;
+
+  @include beforeTablet {
+    height: 330px !important;
+  }
   
 }
+
 
 h1,
 h2,

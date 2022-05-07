@@ -16,7 +16,7 @@ export default function Model({ ...props }) {
     <group ref={group} {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={0.01}>
         <group rotation={[Math.PI / 2, 0, 0]}>
-          <group rotation={[-Math.PI / 2, 0, 0]} scale={140}>
+          <group rotation={[-Math.PI / 2, 0, 0]} scale={130}>
             <primitive object={nodes._rootJoint} />
             <skinnedMesh geometry={nodes.Object_7.geometry} material={materials.Mat_Orange} skeleton={nodes.Object_7.skeleton} />
             <skinnedMesh geometry={nodes.Object_8.geometry} material={materials.Mat_Black} skeleton={nodes.Object_8.skeleton} />
