@@ -89,16 +89,16 @@ const ProfileCard = () => {
                 <GitHubIcon fontSize="large" htmlColor="white" />
               </a>
             </Link>
-            <Link href="https://github.com/criscunas">
+            <Link href="https://twitter.com/criscunas">
               <a className={profileStyles.profile__contact__link}>
                 <TwitterIcon fontSize="large" htmlColor="white" />
               </a>
             </Link>
-              <div className={profileStyles.profile__contact__link}>
-                <Mailto email="criscunas@criscunas.dev">
-                  <AlternateEmailIcon fontSize="large" htmlColor="white" />
-                </Mailto>
-              </div>
+            <div className={profileStyles.profile__contact__link}>
+              <Mailto email="criscunas@criscunas.dev">
+                <AlternateEmailIcon fontSize="large" htmlColor="white" />
+              </Mailto>
+            </div>
           </div>
         </Grid>
       </Grid>
