@@ -19,16 +19,17 @@ export default function MyApp(props) {
   return (
     <React.Fragment>
       <Head>
-        <title>My page</title>
+        <title>Cristopher Cunas</title>
+        <link rel="shortcut icon" href="/favico.png" />
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
       </Head>
-        <CssBaseline />
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+      <CssBaseline />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </React.Fragment>
   );
 }
