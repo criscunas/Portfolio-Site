@@ -1,4 +1,5 @@
 @use '../styles/mixins.scss'as *;
+@use '../styles/variables.scss' as *;
 
 .digi {
 
@@ -19,13 +20,21 @@
     font-size: 2rem;
     font-weight: 600;
     line-height: 2rem;
-    padding: 1rem 0 1.5rem 0;
+    padding: 1rem 0 1.2rem 0;
+  }
+
+  &__link {
+    color:$myspace-red;
+    text-decoration: wavy;
+    font-size: 1.2rem;
+    line-height: 1rem;
+    
   }
 
   &__description {
     color: white;
     font-size: 1rem;
-    
+    padding-top: 1rem;
   }
 
 

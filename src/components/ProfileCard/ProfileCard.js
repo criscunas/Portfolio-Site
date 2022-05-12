@@ -57,7 +57,7 @@ const ProfileCard = () => {
                 />
                 <OrbitControls
                   autoRotate="true"
-                  autoRotateSpeed={5}
+                  autoRotateSpeed={3}
                   enableZoom="false"
                 />
                 <Robot />

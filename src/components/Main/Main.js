@@ -1,4 +1,3 @@
-import mainStyles from "./Main.module.scss";
 import ProfileCard from "../ProfileCard/ProfileCard";
 import { AboutMe } from "../AboutMe/AboutMe";
 import MyBlogs from "../MyBlogs/MyBlogs";

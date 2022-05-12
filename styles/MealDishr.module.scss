@@ -1,5 +1,5 @@
 @use '../styles/mixins.scss'as *;
-
+@use '../styles/variables.scss' as *;
 .mealdishr {
 
   max-width: 768px;
@@ -26,13 +26,16 @@
     color: white;
     font-size: 1rem;
     line-height: 1.5rem;
+    padding-top: 1rem;
   }
 
 
   &__description_note {
     padding-top: 1rem;
-    color: wheat;
-    line-height: 1.5rem;
+    color: $myspace-red;
+    text-decoration: wavy;
+    font-size: 1.2rem;
+    line-height: 1rem;
   }
 
   &__about {

@@ -1,4 +1,5 @@
 @use '../../../styles/mixins.scss'as *;
+@use '../../../styles/variables.scss' as *;
 
 .project {
 
@@ -57,10 +58,11 @@
     }
 
     a {
+      font-size: 1rem;
       text-decoration: none;
       cursor: pointer;
       font-weight: bold;
-      color: #111110;
+      color: $myspace-red;
 
       &:hover {
         text-decoration: underline;

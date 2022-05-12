@@ -1,6 +1,5 @@
 import DateFormatter from "../date-formatter";
 import postStyles from "../../../styles/Posts.module.scss";
-import { Avatar } from "@material-ui/core";
 import Image from "next/image";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";

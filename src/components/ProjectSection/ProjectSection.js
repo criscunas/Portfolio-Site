@@ -28,8 +28,14 @@ export default function Projects() {
       <h1 className={projectStyle.project__header}> Projects </h1>
       <Card className={projectStyle.project__section}>
         <div className={projectStyle.project__title}>
-          <h1 className={projectStyle.project__title_text}> digi </h1>
+          <h1 className={projectStyle.project__title_text}> forumly </h1>
           {NavTo("https://github.com/criscunas/digi-client")}
+        </div>
+
+        <div className={projectStyle.project__title_link}>
+          <Link href="https://forumly.app/">
+            <a> forumly.app</a>
+          </Link>
         </div>
 
         <div className={projectStyle.project__main}>
@@ -44,7 +50,10 @@ export default function Projects() {
           <ul className={projectStyle.project__main_list}>
             <li>User registration, login & authentication.</li>
             <li>Users can follow each other & recieve a customized feed.</li>
-            <li>Blog hosting & dedicated space for community threads.</li>
+            <li>
+              User can create blogs, threads, posts, comments & follow other
+              users.
+            </li>
           </ul>
           <div className={projectStyle.project__main_footer}>
             <Button
@@ -52,7 +61,7 @@ export default function Projects() {
               size="small"
               endIcon={<DoubleArrowIcon />}
               style={{ backgroundColor: "#E1CE7A" }}
-              onClick={() => Router.push("/digi")}
+              onClick={() => Router.push("/forumly")}
             >
               <p className={projectStyle.project__button}> Learn More </p>
             </Button>
