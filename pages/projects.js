@@ -68,6 +68,11 @@ export default function Projects() {
       <Box id="projects" className={projectPageStyles.projectPage}>
         <div className={projectPageStyles.projectPage__body}>
           <h1 className={projectPageStyles.projectPage__header}> forumly </h1>
+          <div className={projectPageStyles.projectPage__description_link}>
+            <Link href="https://forumly.app/">
+              <a> forumly.app</a>
+            </Link>
+          </div>
           <p className={projectPageStyles.projectPage__description}>
             A social media platform for all. Users have the ability create blog
             posts, create discussion threads & posts, upload a profile image and
@@ -245,6 +250,11 @@ export default function Projects() {
 
         <div className={projectPageStyles.project__section}>
           <h1 className={projectPageStyles.projectPage__header}> MealDishr </h1>
+          <div className={projectPageStyles.projectPage__description_link}>
+            <Link href="https://meal-dishr-next.vercel.app/">
+              <a> meal-dishr-next.vercel.app</a>
+            </Link>
+          </div>
           <p className={projectPageStyles.projectPage__description}>
             A fully responsive meal generator application that utilizes
             TheMealDB's API. Returns ingredients list with measurement,
@@ -252,11 +262,6 @@ export default function Projects() {
             below to demo the application or on the GitHub icon for the public
             repo.
           </p>
-          <div className={projectPageStyles.projectPage__description_link}>
-            <Link href="https://meal-dishr-next.vercel.app/">
-              <a> meal-dishr-next.vercel.app</a>
-            </Link>
-          </div>
           <div className={projectPageStyles.projectPage__button}>
             <Button
               variant="string"

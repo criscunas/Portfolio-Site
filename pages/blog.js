@@ -26,18 +26,18 @@ export async function getStaticProps() {
   };
 }
 
-export default function Blogs ({posts}) {
+export default function Blog ({posts}) {
 
   const Router = useRouter();
 
   return (
     <>
       <Head>
-        <title> Blogs </title>
+        <title> Blog </title>
       </Head>
       <Box className={blogPage.blogs}>
       <div className={blogPage.blogs__header}>
-        <h1 className={blogPage.blogs__header_title}> Cris's Blogs <span aria-labe = "technologist"> 👨🏻‍💻</span> </h1>
+        <h1 className={blogPage.blogs__header_title}> Cris's Blog <span aria-labe = "technologist"> 👨🏻‍💻</span> </h1>
         <p className={blogPage.blogs__header_sub}> Updated weekly. </p>
       </div>
         {posts.map((post, i) => {

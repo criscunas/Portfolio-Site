@@ -80,7 +80,7 @@ export default function Header() {
               </Link>
             </MenuItem>
             <MenuItem onClick={handleClose}>
-              <Link href="/blogs">
+              <Link href="/blog">
                 <a>Blog</a>
               </Link>
             </MenuItem>
@@ -100,7 +100,7 @@ export default function Header() {
             </Link>
           </li>
           <li className={headerStyles.header__tablet_list}>
-            <Link href="/blogs">
+            <Link href="/blog">
               <a>Blog</a>
             </Link>
           </li>
