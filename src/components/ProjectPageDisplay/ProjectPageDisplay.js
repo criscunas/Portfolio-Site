@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper";
-
+import {v4 as uuidv4} from 'uuid'
 
 export const ProjectPageDisplay = ({title , link , url, description, page, images, stack}) => {
 
@@ -53,7 +53,7 @@ export const ProjectPageDisplay = ({title , link , url, description, page, image
           >
             {images.map((img, i) => {
               return (
-                <SwiperSlide key={i}>
+                <SwiperSlide key={uuidv4()}>
                   <img src={img.src} alt="projectimgs" />
                 </SwiperSlide>
               );
@@ -69,6 +69,7 @@ export const ProjectPageDisplay = ({title , link , url, description, page, image
         {stack.map((ele) => {
           return (
           <Grid
+            key = {uuidv4()}
             style={{ display: "flex", justifyContent: "center" }}
             item
             xs={4}
