@@ -30,7 +30,8 @@
     "sass": "^1.50.0",
     "swiper": "^8.1.4",
     "three": "^0.140.0",
-    "typewriter-effect": "^2.18.2"
+    "typewriter-effect": "^2.18.2",
+    "uuidv4": "^6.2.13"
   },
   "devDependencies": {
     "eslint": "8.13.0",
