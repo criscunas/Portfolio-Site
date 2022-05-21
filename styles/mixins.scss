@@ -1,13 +1,16 @@
 @use "../styles/variables.scss"as *;
 
 
+@mixin p-text {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
 @mixin profile-card {
   @media screen and (min-width: $profile-tablet) {
     @content;
   }
 }
-
-
 
 @mixin beforeTablet {
   @media screen and (min-width: $before-tablet) {

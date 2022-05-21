@@ -2,15 +2,37 @@
 
 
 .home {
-  max-width: 1280px;
+  max-width: 768px;
   margin: 0 auto;
 
+  // background-color: #202023;
   @include tablet {
-    display: flex;
+    // display: flex;
     // padding: 1.5rem 2rem;    
     gap: 2rem;
   }
   
+
+  &__canvas {
+    height: 20vh;
+    position: relative;
+    // display: flex;
+    
+    
+  }
+
+
+  &__canvas_item {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    -moz-transform: translate(-50%, -50%); /* Firefox */
+    -ms-transform: translate(-50%, -50%);  /* IE 9 */
+    -webkit-transform: translate(-50%, -50%); /* Safari and Chrome*/
+    -o-transform: translate(-50%, -50%); /* Opera */
+    transform: translate(-50%, -50%);
+  }
+
   &__top {
     flex: 0.8;
   }

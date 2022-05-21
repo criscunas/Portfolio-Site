@@ -5,9 +5,11 @@ import Header from '../Header/Header';
 export const Layout = ({children}) => {
   return (
     <Container className={layoutStyles.layout} maxWidth="xl" disableGutters>
-      <Header />
       <div className={layoutStyles.layout__container}>
-        <main className={layoutStyles.layout__content}>{children} </main>
+        <main className={layoutStyles.layout__content}>
+          <Header />
+          {children}
+        </main>
       </div>
     </Container>
   );

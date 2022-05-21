@@ -2,163 +2,87 @@
 @use '../../../styles/mixins.scss'as *;
 
 .profile {
-  margin: 1rem 0;
-
-  &__card {
-    padding-left: 1rem;
-
-    @include profile-card {
-      display: none;
-    }
-  }
   
-  &__card_name {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin: 1rem 0;
   
-  }
-
-  &__card_body {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 1.5rem;
-  
-  }
-
-  &__card_footer {
-    padding-bottom: 0.5rem;
-    font-style: italic;
-  }
-
-  &__card_footer_text {
-    margin-left: 0.3rem;
-    font-style: normal;
-    
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  &__card_online {
-    font-size: 0.6rem;
-    display: flex;
-    font-weight: 600;
-    align-items: center;
-    margin-top: 0.5rem;
-    color: green;
-  }
-
-  &__card_mood {
-    font-size: 0.9rem;
-    padding: 0.5rem 0;
-  }
-  
-  &__card_mood_span {
-    font-weight: bold;
-    color: black;
-    font-size: 0.9rem;
-  }
-
-  &__card_footer{
-    padding: 0.5rem 0 1rem 0;
-    font-size: 0.9rem;
-  }
-
-  &__tablet_card {
-    
-    display: none;
-
-    @include profile-card {
-      display: block;
-      margin-bottom: 1rem;
-    }
-  }
-
-  &__tablet_card_body {
-    display: flex;
-    padding: 1.5rem 1rem 1rem 1rem;
-    align-items: center;
-    gap: 1.7rem;
-
-    @include breakpoint {
-      padding: 2rem 1.5rem 1.5rem 1.5rem;
-    }
-  }
-
-  
-  &__tablet_card_name {
-    font-weight: bold;
-    font-size: 1.2rem;
-  }
-
-  &__tablet_card_welcome {
-    display: flex;
-    font-weight: 400;
-    gap: 1rem;
-    padding: 0.2rem 0;
-  }
-
-  &__tablet_card_welcome {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-  }
-  
-  &__tablet_card_footer {
-    padding: 0 1rem 1rem 1rem;  
-    font-style: italic;
-
-    @include tablet {
-      display: none;
-    }
-    
-  }
-
-
-  &__footer_link {
-    margin-left: 0.2rem;
-    font-weight: bold;
-    font-style: normal;
-    cursor: pointer;
-  }
-
-  &__current__blog {
-    color: $myspace-darkblue;
-    font-weight: bold;
-    font-size: 0.9rem;
-  }
-
-  &__contact {
-    border: 2px solid $myspace-blue;
-    margin: 0.5rem 0;
-    background-color: white;
-  }
-
-  &__contact__header {
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding-left: 0.5rem ;
+  &__head {
     color: white;
-    background-color: $myspace-blue;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+
   }
 
-  &__contact__link {
-    display: flex;
-    text-decoration: none;
-    padding-left: 0.5rem;
-    margin: 0.3rem 0;
-    align-items: center;
-    gap: 0.4rem;
-    color: $myspace-darkblue;
-    font-weight: bold;
-    cursor: pointer;
+  &__canvas {
 
-    &:hover {
-      text-decoration: underline;
+    
+  }
+
+  &__image {
+    text-align: center;
+    
+    border: 1px solid red;
+    @include beforeTablet {
+      // text-align: right;
     }
   }
-  &__grid {
-    padding: 0.8rem 0;
+
+  &__spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align : center;
+    padding-bottom: 1rem;
   }
+
+  &__bio {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 0.9rem;
+    font-weight: 400;
+    
+  }
+
+  &__welcome {
+    display: flex;
+    padding: 1rem 1rem 0rem 1rem;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #E1CE7A;
+    @include beforeTablet {
+      justify-content: flex-start;
+    }
+  }
+
+  &__welcome_sub {
+    font-size: 1rem;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    font-weight: 500;
+    line-height: 1.5rem;
+    // text-align: center;
+    @include beforeTablet {
+      text-align: left;
+      font-size: 1.1rem;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: space-evenly;
+    // align-items: center;
+    // justify-content: space-evenly;
+    margin: 0.5rem 0;
+
+    @include beforeTablet {
+      margin-top: 2rem;
+    }
+
+
+  }
+
 }
+
