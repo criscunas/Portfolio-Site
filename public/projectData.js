@@ -5,8 +5,8 @@ export default {
       mainText:
         "A Social Media/Forum platform where users can connect & interact with each other.",
       features: [
-        "User registration, login & authentication",
-        "Users can follow each other & recieve a customized feed",
+        "User registration, login & authentication.",
+        "Users can follow each other & recieve a customized feed.",
         "User can create blogs, threads, posts, comments & follow other users.",
       ],
       link: "/Forumly",
@@ -19,8 +19,8 @@ export default {
       mainText:
         "Web application built for Shopify Frontend Developer Challenge that utilizes OpenAI's API.",
       features: [
-        "User can select which AI engine to use",
-        "Generates a list of songs based off of emoji selection",
+        "User can select from 4 AI engines to use.",
+        "Generates a list of songs based off of emoji selection.",
         "Generates travel tips based off a city, state input. Can also generate a random location.",
       ],
       link: "/FunWithGPT",
@@ -31,7 +31,7 @@ export default {
     {
       title: "MealDishr",
       mainText:
-        "A meal generator application that provides you with meal instructions, measurements & a video on how to prepare the meal of your choice",
+        "A meal generator application that provides you with meal instructions, measurements & a video on how to prepare the meal of your choice.",
       features: [
         "Detailed instuctions on each meal along with a youtube link.",
         "Wide variety of options to choose from.",
