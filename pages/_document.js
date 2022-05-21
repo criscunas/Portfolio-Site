@@ -10,9 +10,14 @@ export default class MyDocument extends Document {
         <Head>
           {/* PWA primary color */}
           <meta />
-          <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin></link>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet"></link>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap"
+            rel="stylesheet preload prefetch"
+            as="style"
+            type="text/css"
+            crossOrigin="anonymous"
+          />
         </Head>
         <body>
           <Main />
