@@ -43,6 +43,21 @@ export default {
       display: "meal-dishr-next.vercel.app",
     },
     {
+      title:'Twitch Search',
+      mainText: 
+      "A search bar that utilizes the Twitch API to search a twitch user and return their display name & follower count. ",
+      features : [
+        "Built on a node server that serves a proxy to handle requests to Twitch Server." , 
+        "Use sqlite to store search results & node cache to handle subsequent searches." , 
+        "UI components to handle loading state & errors.",
+      ],
+      git: "https://github.com/criscunas/twitch-search",
+      link: "/TwitchSearch",
+      url: "https://github.com/criscunas/twitch-search",
+      display: "https://github.com/criscunas/twitch-search",
+
+    },
+    {
       title: "Personal Site",
       mainText: "Personal portfolio website that also acts a blog.",
       features: [
@@ -50,7 +65,7 @@ export default {
         "Able to host my personal blog as well as display previous work.",
         "Resusable components to easily display new work.",
       ],
-      git: "https://github.com/criscunas/Portfolio-Site",
+      git: "github.com/criscunas/Portfolio-Site",
     },
   ],
 };
