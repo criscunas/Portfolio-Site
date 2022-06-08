@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Head from "next/head";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { Layout } from "../src/components/Layout/Layout";
-import "../styles/globals.scss";
+import "../styles/globals.css";
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;

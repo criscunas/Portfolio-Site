@@ -10,9 +10,9 @@ export default {
         "User can create blogs, threads, posts, comments & follow other users.",
       ],
       link: "/Forumly",
-      url: "https://www.forumly.app",
-      git: "https://github.com/criscunas/digi-client",
-      display: "forumly.app",
+      url: "https://github.com/criscunas/forumly-client",
+      git: "https://github.com/criscunas/forumly-client",
+      display: "github.com/criscunas/forumly-client",
     },
     {
       title: "FunWithGPT-3",
@@ -54,7 +54,7 @@ export default {
       git: "https://github.com/criscunas/twitch-search",
       link: "/TwitchSearch",
       url: "https://github.com/criscunas/twitch-search",
-      display: "https://github.com/criscunas/twitch-search",
+      display: "github.com/criscunas/twitch-search",
 
     },
     {
