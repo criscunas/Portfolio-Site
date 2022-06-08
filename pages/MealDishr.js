@@ -20,50 +20,50 @@ export default function MealDishr() {
  ];
 
  return (
-  <div class="project">
+  <div className="project">
    <Head>
     <title>MealDishr</title>
    </Head>
-   <div class="project-main">
-    <div class="project-header">
-     <h1 class="project-title"> Mealdishr </h1>
+   <div className="project-main">
+    <div className="project-header">
+     <h1 className="project-title"> Mealdishr </h1>
      <Link href="https://meal-dishr-next.vercel.app/">
-      <a class="project-link">meal-dishr-next.vercel.app</a>
+      <a className="project-link">meal-dishr-next.vercel.app</a>
      </Link>
-     <p class="project-description">A meal generator application.</p>
+     <p className="project-description">A meal generator application.</p>
     </div>
 
-    <div class="project-about">
-     <h1 class="project-about_title">The idea</h1>
-     <p class="project-about_subhead">
+    <div className="project-about">
+     <h1 className="project-about_title">The idea</h1>
+     <p className="project-about_subhead">
       With only 24 hours to build something, my coding partner and I decided to
       utilize themealdb's free API to build an application that would return to
       you the ingredients, measurements & a video on how to prepare the meal of
       your choosing.
      </p>
 
-     <h1 class="project-about_title">Tech</h1>
-     <p class="project-about_subhead">React, Material UI, SCSS.</p>
-     <h1 class="project-about_title">My Role</h1>
-     <p class="project-about_subhead">
+     <h1 className="project-about_title">Tech</h1>
+     <p className="project-about_subhead">React, Material UI, SCSS.</p>
+     <h1 className="project-about_title">My Role</h1>
+     <p className="project-about_subhead">
       As this was a paired programming project, my partner and I split our tasks
       evenly. I recently rebuilt this project with Next.js and have it deployed
       on Vercel. Some of the work that went into the rebuild included
      </p>
-     <div class="project-list">
-      <li class="project-list_item">
+     <div className="project-list">
+      <li className="project-list_item">
        Adding responsive styling for mobile to desktop.
       </li>
 
-      <li class="project-list_item">
+      <li className="project-list_item">
        Using the Next.js framework to rebuild our original app.
       </li>
 
-      <li class="project-list_item">
+      <li className="project-list_item">
        Using Material UI to deliver a clean and user friendly layout.
       </li>
 
-      <li class="project-list_item">Deployment with Vercel.</li>
+      <li className="project-list_item">Deployment with Vercel.</li>
      </div>
 
      <Swiper

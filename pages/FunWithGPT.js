@@ -20,17 +20,17 @@ export default function FunWithGPT() {
  ];
 
  return (
-  <div class="project">
+  <div className="project">
    <Head>
     <title>Fun with GPT-3</title>
    </Head>
-   <div class="project-main">
-    <div class="project-header">
-     <h1 class="project-title"> FunWithGPT-3 </h1>
+   <div className="project-main">
+    <div className="project-header">
+     <h1 className="project-title"> FunWithGPT-3 </h1>
      <Link href="https://fun-with-gpt-3-nine.vercel.app">
-      <a class="project-link">fun-with-gpt-3-nine.vercel.app</a>
+      <a className="project-link">fun-with-gpt-3-nine.vercel.app</a>
      </Link>
-     <p class="project-description">
+     <p className="project-description">
       A web application built for Shopify's Frontend Developer Intern Challenge.
       User can select from 4 AI engines to use, can generate a random playlist
       based off of emojis & also generate travel tips based off of input. All
@@ -38,30 +38,30 @@ export default function FunWithGPT() {
      </p>
     </div>
 
-    <div class="project-about">
-     <h1 class="project-about_title">The Task</h1>
-     <p class="project-about_subhead">
+    <div className="project-about">
+     <h1 className="project-about_title">The Task</h1>
+     <p className="project-about_subhead">
       An app that sends plain text prompts to the OpenAI API and displays the
       results in a list.
      </p>
-     <h1 class="project-about_title">Tech</h1>
-     <p class="project-about_subhead">
+     <h1 className="project-about_title">Tech</h1>
+     <p className="project-about_subhead">
       React, Next.js, Material UI, SCSS, Styled Components
      </p>
-     <h1 class="project-about_title">My Role</h1>
-     <p class="project-about_subhead">
+     <h1 className="project-about_title">My Role</h1>
+     <p className="project-about_subhead">
       As this was a solo project, I handled everything. These tasks included:
      </p>
-     <div class="project-list">
-      <li class="project-list_item">
+     <div className="project-list">
+      <li className="project-list_item">
        Reading through Open AI's API documentation to gain a better
        understanding on how to use thier product.
       </li>
-      <li class="project-list_item">
+      <li className="project-list_item">
        Researching color schemes & design patterns used by Shopify and
        integrating them into my project.
       </li>
-      <li class="project-list_item">
+      <li className="project-list_item">
        Set up Next.js API routes to handle fetching and recieving data from API
        requests.
       </li>
