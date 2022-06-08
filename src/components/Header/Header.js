@@ -4,19 +4,15 @@ import {
 } from "@material-ui/core";
 import headerStyles from "./Header.module.scss";
 import { useState } from "react";
-import {useRouter} from 'next/router';
 import Link from 'next/link';
 import MenuIcon from "@mui/icons-material/Menu";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Typewriter from "typewriter-effect";
-import NotesIcon from "@mui/icons-material/Notes";
-
 
 export default function Header() {
-  const Router = useRouter();
-
+  
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
