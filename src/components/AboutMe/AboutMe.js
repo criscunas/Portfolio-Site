@@ -1,6 +1,4 @@
 import {
-  Box,
-  Card,
   Grid,
   CardContent
 } from "@material-ui/core";
@@ -8,32 +6,25 @@ import aboutStyles from './AboutMe.module.scss'
 
 export const AboutMe = () => {
   return (
-    <Box className={aboutStyles.about}>
-      <h1 className={aboutStyles.about__header}> About me </h1>
-      <Card className={aboutStyles.about__card}>
-        <CardContent className={aboutStyles.about__card_content}>
-          <h1 className={aboutStyles.about__bio_header}>Bio</h1>
-          <p className={aboutStyles.about__bio}>
-            Full Stack Developer. Jiu Jitsu hobbyist. Lover of code and
-            learning. Primarily writing in Javascript but have taken college
-            courses in Java. From building out an efficient backend, to building
-            user friendly UI & eventually deployment. I truly enjoy every step
-            of the process and am always looking for ways to improve my
-            skillset. Feel free to reach me through the links above.
-          </p>
-          <div>
-            <h1 className={aboutStyles.about__bio_skills_header}>Skills</h1>
-            <p className={aboutStyles.about__bio_skills_text}>
-              {" "}
-              Javascript, React, Node, Express, API's, SQL, Authenticaton, Agile
-              Development, GitHub, HTML, CSS, SCSS, Knex.js, Material UI.
-            </p>
+    <div className="card shadow-xl bg-white mb-6 rounded-xl">
+      <div>
+        <h1 className="font-semibold text-2xl"> About me </h1>
+          <div className="my-4">
+            <h1> Bio </h1>
+            <p> Full Stack Developer. Jiu Jitsu hobbyist. Primarily writing in Javascript but have taken
+            courses in Java. Currently a Software Engineer Intern at Streamforge. Really enjoy learning about and 
+            working the latest tech. Currently working with Vue.js but also familiar with Next.js. Always looking to better my skills
+            and pass it on. Feel free to reach me through my socials above. </p>
           </div>
-          <Grid container className={aboutStyles.about__bio_edu}>
+          <div className = "my-4">
+            <h1> Skills </h1>
+            <p> Javascript, React, Vue.js, Next.js, Node, Express, API's, SQL, Knex.js, Github, HTML, CSS, SCSS, Tailwind, Material UI, Agile Devlopment. </p>
+          </div>
+          <Grid container>
             <Grid item xs={12}>
-              <h1 className={aboutStyles.about__bio_edu_title}>Education</h1>
+              <h1> Education </h1>
             </Grid>
-            <Grid item xs={12} sm={6} className={aboutStyles.about__bio_school}>
+            <Grid item xs={12} sm={6}>
               <p>
                 BrainStation
                 <br />
@@ -45,7 +36,7 @@ export const AboutMe = () => {
               </p>
             </Grid>
 
-            <Grid item xs={12} sm={6} className={aboutStyles.about__bio_school}>
+            <Grid item xs={12} sm={6}>
               <p>
                 Johnston Community College
                 <br />
@@ -57,8 +48,7 @@ export const AboutMe = () => {
               </p>
             </Grid>
           </Grid>
-        </CardContent>
-      </Card>
-    </Box>
+      </div>  
+    </div>
   );
 };
