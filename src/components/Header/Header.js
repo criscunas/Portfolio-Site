@@ -24,8 +24,8 @@ export default function Header() {
   };
 
   return (
-    <Box className={headerStyles.header}>
-      <h2 className={headerStyles.header__text}>
+    <div className="pt-4 px-6 flex justify-between items-center">
+      <h2 className="font-semibold flex items-center text-lg text-[#E1C37A] ">
         <Typewriter
           options={{
             strings: [
@@ -102,7 +102,7 @@ export default function Header() {
           </li>
         </ul>
       </div>
-    </Box>
+    </div>
   );
 }
 
