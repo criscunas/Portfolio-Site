@@ -1,7 +1,21 @@
 export default {
-  projects: [
+  projects: [{
+    title: "LinkMe",
+    mainText:
+      "A Linktree clone built with Vue.js, Tailwind, Nest.js & MongoDB.",
+    features: [
+      "Profile customization.",
+      "Users can submit personal links with an added caption & also edit them.",
+      "Each user has a personal profile page with thier added styles & links.",
+    ],
+    link: "/LinkMe",
+    url: "https://github.com/criscunas/link-me-vue",
+    git: "https://github.com/criscunas/link-me-vue",
+    display: "github.com/criscunas/link-me-vue",
+
+  },
     {
-      title: "forumly",
+      title: "Forumly",
       mainText:
         "A Social Media/Forum platform where users can connect & interact with each other.",
       features: [

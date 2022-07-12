@@ -1,8 +1,25 @@
 export default {
   projectData: [
     {
-      title: "forumly",
-      link: "forumly.app",
+      title: "LinkMe",
+      link: "LinkMe repo",
+      url: "https://github.com/criscunas/link-me-vue",
+      description: "A LinkTree clone that lets users customize thier profile and add custom links to it.",
+      page: '/LinkMe',
+      images: [
+        {src: "/images/linkme1.png"},
+        {src: "/images/linkme2.png"},
+      ],
+      stack: [
+        { src: "/images/vue.png" },
+        { src: "/images/tailwind.jpg" },
+        { src: "/images/nest.png" },
+        { src: "/images/mongo.png" },
+      ],
+    },
+    {
+      title: "Forumly",
+      link: "Forumly repo",
       url: "https://forumly.app/",
       description:
         "A social media platform for all. Users have the ability create blog posts, create discussion threads & posts, upload a profile image and personal bio, post status updates & follow other users and recieve a personalized feed.",
@@ -17,7 +34,6 @@ export default {
         { src: "/images/reactlogo.png" },
         { src: "/images/next.png" },
         { src: "/images/MySqlLogo.png" },
-        { src: "/images/formik.jpg" },
         { src: "/images/nodejs-2.svg" },
         { src: "/images/express.png" },
         { src: "/images/sass.jpg" },
@@ -40,7 +56,6 @@ export default {
       stack: [
         { src: "/images/reactlogo.png" },
         { src: "/images/next.png" },
-        { src: "/images/formik.jpg" },
         { src: "/images/sass.jpg" },
         { src: "/images/material.jpg" },
       ],
