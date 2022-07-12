@@ -1,104 +1,92 @@
-@use '../../../styles/mixins.scss' as *;
-@use '../../../styles/variables.scss'as *;
-
-
+@use "../../../styles/mixins.scss" as *;
+@use "../../../styles/variables.scss" as *;
 
 .header {
-  padding: 1rem 0 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 768px;
-
-  @include beforeTablet {
-    margin: 0 auto;
-    
-  }
-
-  &__hamburger {
-
-    @include beforeTablet {
-      display: none;
-    }
-  }
-
-  &__text {
-    color: #E1CE7A;
-    font-weight: 600;
+    padding: 1rem 0 1.5rem;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-
-  &__name {
-    font-size: 1.4rem;
-    font-weight: bolder;
-  }
-
-  &__nav {
-    
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    
-  
-    li {
-      align-self: flex-start;
-      color: whitesmoke;
-      font-weight: 500;
-      padding: 0 0.5rem;
-    }
-
-    a {
-      text-decoration: none;
-      color: white;
-    }
-    
-  }
-
-  &__head {
-    
-    ul {
-      padding-top: 0;
-      padding-bottom: 0;
-      background-color: #0d1a2fd1;
-    }
-  }
-
-  &__tablet {
-    color: white;
-    display: none;    
+    max-width: 768px;
 
     @include beforeTablet {
-      display: block;
+        margin: 0 auto;
     }
 
-    ul {
-      display: flex;
-      gap: 0.5rem;
+    &__hamburger {
+        @include beforeTablet {
+            display: none;
+        }
     }
 
-  }
-
-  &__tablet_list {
-    
-    a {
-      color: whitesmoke;
-      font-weight: 500;
-      font-size: 1rem;
-      cursor:pointer;
-      text-decoration: none;
-      
+    &__text {
+        color: #e1ce7a;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        cursor: pointer;
     }
 
-    @include beforeTablet {
-      padding: 1rem;
-
-      &:hover {
-        border-bottom: 1px solid white;
-      }
+    &__name {
+        font-size: 1.4rem;
+        font-weight: bolder;
     }
-  }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        li {
+            align-self: flex-start;
+            color: whitesmoke;
+            font-weight: 500;
+            padding: 0 0.5rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    &__head {
+        ul {
+            padding-top: 0;
+            padding-bottom: 0;
+            background-color: #0d1a2fd1;
+        }
+    }
+
+    &__tablet {
+        color: white;
+        display: none;
+
+        @include beforeTablet {
+            display: block;
+        }
+
+        ul {
+            display: flex;
+            gap: 0.5rem;
+        }
+    }
+
+    &__tablet_list {
+        a {
+            color: whitesmoke;
+            font-weight: 500;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        @include beforeTablet {
+            padding: 1rem;
+
+            &:hover {
+                border-bottom: 1px solid white;
+            }
+        }
+    }
 }
-
