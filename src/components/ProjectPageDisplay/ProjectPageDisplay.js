@@ -78,7 +78,7 @@ export const ProjectPageDisplay = ({title , link , url, description, page, image
             <Avatar
               alt={ele.alt}
               src={ele.src}
-              variant="square"
+              variant="rounded"
               style={{ height: 75, width: 75 }}
             />
           </Grid>

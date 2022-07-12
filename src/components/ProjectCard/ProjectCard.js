@@ -1,6 +1,4 @@
-import style from './ProjectCard.module.scss';
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
-import { Card, Button } from "@material-ui/core";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Link from 'next/link';
 import { useRouter } from "next/router";
@@ -21,40 +19,35 @@ export const ProjectCard = ({title, git, mainText, features, link, url, display}
   };
   
   return (
-    <Card className={style.project__card}>
-      <div className={style.project__title}>
-        <h1 className={style.project__title_text}> {title} </h1>
-        {NavTo(git)}
-      </div>
 
-      {!link ? null : (
-        <div className={style.project__title_link}>
+    <div className="card shadow-xl bg-white mb-6 rounded-xl">
+      <div className = "card-body p-8">
+        <div className='flex items-center gap-4 pb-2'>
+          <h1 className='card-title font-semibold text-3xl'> {title }</h1>
+          {NavTo(git)}
+        </div>
+
+        {!link ? null :  (
           <Link href={url}>
-            <a> {display}</a>
+            <a className='text-base cursor-pointer text-[#ED0707]'> {display}</a>
           </Link>
-        </div>
-      )}
+        )}
 
-      <div className={style.project__main}>
-        <p className={style.project__main_text}>{mainText}</p>
-        <h2 className={style.project__main_subhead}>Notable Features</h2>
-        <ul className={style.project__main_list}>
-          <li> {features[0]} </li>
-          <li> {features[1]} </li>
-          <li> {features[2]} </li>
-        </ul>
-        <div className={style.project__main_footer}>
-          <Button
-            variant="string"
-            size="small"
-            endIcon={<DoubleArrowIcon />}
-            style={{ backgroundColor: "#E1CE7A" }}
-            onClick={() => Router.push(link)}
-          >
-            <p className={style.project__button}> Learn More </p>
-          </Button>
+        <div className='mt-4'>
+          <h1 className='font-semibold text-lg'> {mainText} </h1>
+          <h2 className='my-4 font-semibold text-base'> Notable features.</h2>
+            <ul className='list-disc ml-4'>
+              <li className="text-base mb-2"> {features[0]}  </li>
+              <li className="text-base mb-2"> {features[1]} </li>
+              <li className="text-base mb-2"> {features[2]} </li>
+            </ul>
+          <div className='text-right mt-4'>
+            <button className = "bg-[#E1CE7A] rounded-md py-2 px-3" onClick={() => Router.push(link)}>
+              <span className='text-md'> Learn more </span> <DoubleArrowIcon/> 
+            </button>
+          </div>
         </div>
       </div>
-    </Card>
+    </div>
   );
 }
