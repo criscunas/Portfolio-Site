@@ -1,11 +1,11 @@
 import { Box, Card, CardHeader, CardActions, Button, Grid} from "@material-ui/core";
-import DateFormatter from '../date-formatter';
+import DateFormatter from '../../../lib/date-formatter';
 import blogStyles from './MyBlogs.module.scss';
 import ReadMoreIcon from "@mui/icons-material/ReadMore";
 import {useRouter} from 'next/router';
 
 const MyBlogs = ({posts}) => {
- 
+
   const Router = useRouter()
 
   return (

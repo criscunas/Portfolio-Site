@@ -1,6 +1,6 @@
 import style from "./ProjectSection.module.scss";
 import {Box} from "@material-ui/core";
-import { ProjectCard } from "../ProjectCard/ProjectCard";
+import { ProjectCard } from "../ProjectCard";
 import data from '../../../public/projectData';
 import {v4 as uuidv4} from 'uuid';
 
@@ -11,7 +11,7 @@ export const ProjectSection = () => {
       <h1 className={style.project__header}> Projects </h1>
       {data.projects.map(ele => {
         return (
-          <ProjectCard 
+          <ProjectCard
           key = {uuidv4()}
           title = {ele.title}
           git = {ele.git}

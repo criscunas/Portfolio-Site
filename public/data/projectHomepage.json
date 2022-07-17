@@ -1,0 +1,153 @@
+[
+    {
+        "title": "LinkMe",
+        "description": "A Linktree clone built with Vue.js, Tailwind, Nest.js & MongoDB.",
+        "features": [
+            "Profile customization.",
+            "Users can submit personal links with an added caption & also edit them.",
+            "Each user has a personal profile page with thier added styles & links."
+        ],
+        "link": "projects/LinkMe",
+        "git": "https://github.com/criscunas/link-me-vue",
+        "stack" : [
+            {
+                "name" : "Vue",
+                "bg_color" : "#42b883"
+            }, {
+                "name" : "Tailwind",
+                "bg_color" : "#0ea5e9"
+            }, {
+                "name" : "Nest",
+                "bg_color" : "#E0234E"
+            }, {
+                "name" : "MongoDB",
+                "bg_color" : "#8E714E"
+            }
+        ]
+    },
+    {
+        "title": "Forumly",
+        "description": "A Social Media/Forum platform where users can connect & interact with each other.",
+        "features": [
+            "User registration, login & authentication.",
+            "Users can follow each other & recieve a customized feed.",
+            "User can create blogs, threads, posts, comments & follow other users."
+        ],
+        "link": "projects/Forumly",
+        "git": "https://github.com/criscunas/forumly-client",
+        "stack" : [
+            {
+                "name" : "Next",
+                "bg_color" : "#FDFFFF"
+            }, {
+                "name" : "Tailwind",
+                "bg_color" : "#0ea5e9"
+            }, {
+                "name" : "Express",
+                "bg_color" : "#e5e7eb"
+            }, {
+                "name" : "SQL",
+                "bg_color" : "#E48E1A"
+            }
+        ]
+    },
+    {
+        "title": "FunWithGPT-3",
+        "description": "Web application built for Shopify Frontend Developer Challenge that utilizes OpenAI's API.",
+        "features": [
+            "User can select from 4 AI engines to use.",
+            "Generates a list of songs based off of emoji selection.",
+            "Generates travel tips based off a city, state input. Can also generate a random location."
+        ],
+        "link": "projects/FunWithGPT",
+        "git": "https://github.com/criscunas/FunWithGPT-3",
+        "stack" : [
+            {
+                "name" : "Next",
+                "bg_color" : "#FDFFFF"
+            }, {
+                "name" : "Material UI",
+                "bg_color" : "#0081CB"
+            }, {
+                "name" : "Scss",
+                "bg_color": "#CD6799"
+            }
+        ]
+    },
+    {
+        "title": "MealDishr",
+        "description": "A meal generator application that provides you with meal instructions, measurements & a video on how to prepare the meal of your choice.",
+        "features": [
+            "Detailed instuctions on each meal along with a youtube link.",
+            "Wide variety of options to choose from.",
+            "Offers a button to randomly generate a meal."
+        ],
+        "link": "projects/MealDishr",
+        "url": "https://meal-dishr-next.vercel.app/",
+        "git": "https://github.com/criscunas/MealDishrNext",
+        "stack" : [
+            {
+                "name" : "Next",
+                "bg_color" : "#FDFFFF"
+            }, {
+                "name" : "Material UI",
+                "bg_color" : "#0081CB"
+            }, {
+                "name" : "Scss",
+                "bg_color": "#CD6799"
+            }
+        ]
+    },
+    {
+        "title": "Twitch Search",
+        "description": "A search bar that utilizes the Twitch API to search a twitch user and return their display name & follower count. ",
+        "features": [
+            "Built on a node server that serves a proxy to handle requests to Twitch Server.",
+            "Use sqlite to store search results & node cache to handle subsequent searches.",
+            "UI components to handle loading state & errors."
+        ],
+        "git": "https://github.com/criscunas/twitch-search",
+        "link": "projects/TwitchSearch",
+        "stack" : [
+            {
+                "name" : "React",
+                "bg_color" : "#53C1DE"
+            }, {
+                "name" : "Material UI",
+                "bg_color" : "#0ea5e9"
+            }, {
+                "name" : "Express",
+                "bg_color" : "#e5e7eb"
+            }, {
+                "name" : "Sqlite3",
+                "bg_color" : "#E48E1A"
+            }
+        ]
+    },
+    {
+        "title": "Personal Site",
+        "description": "Personal portfolio website that also acts a blog.",
+        "git": "https://github.com/criscunas/Portfolio-Site",
+        "features": [
+            "Fully responsive on all screen sizes.",
+            "Able to host my personal blog as well as display previous work.",
+            "Resusable components to easily display new work."
+        ],
+        "link" : "/",
+        "stack" : [
+            {
+                "name" : "Next",
+                "bg_color" : "#42b883"
+            },{
+                "name" : "Typescript",
+                "bg_color" : "#0ea5e9"
+            },{
+                "name" : "Tailwind",
+                "bg_color" : "#0ea5e9"
+            }, {
+                "name" : "Material UI",
+                "bg_color" : "#8E714E"
+            }
+        ]
+    }
+]

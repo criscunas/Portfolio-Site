@@ -1,4 +1,4 @@
-@use "../../../styles/mixins.scss" as *;
+@use '../../../styles/mixins.scss' as *;
 @use "../../../styles/variables.scss" as *;
 
 .header {
@@ -62,9 +62,7 @@
         color: white;
         display: none;
 
-        @include beforeTablet {
-            display: block;
-        }
+
 
         ul {
             display: flex;

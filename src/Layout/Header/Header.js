@@ -21,13 +21,14 @@ export default function Header() {
 
     return (
         <div className="py-4 flex justify-between items-center">
-            <h2 className="font-semibold flex items-center text-lg text-[#E1C37A] ">
+            <h2
+            className="font-semibold flex items-center text-lg text-[#E1C37A]">
                 <Typewriter
                     options={{
                         strings: [
                             "criscunas.dev",
                             "Welcome to my page ",
-                            "Feel free to view my work",
+                            "View my work",
                             "Or read my blog",
                             "it's ok if u dont ....",
                             "Have a great day ! ",
