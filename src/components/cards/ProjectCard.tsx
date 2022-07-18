@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import {ProjectBadge} from './components/ProjectBadge';
+import {ProjectBadge} from '../ProjectBadge';
 import ReadMoreIcon from '@mui/icons-material/ReadMore';
 
 type propData = {
@@ -18,7 +18,7 @@ type propData = {
     };
 }
 
-export const ProjectCardTwo = ({project}: propData) => {
+export const ProjectCard = ({project}: propData) => {
 
     const Router = useRouter();
 
@@ -37,7 +37,7 @@ export const ProjectCardTwo = ({project}: propData) => {
             <div className="p-4">
                 <div className="flex items-center justify-between border-b-2 pb-3">
                     <div className="flex items-center gap-4">
-                        <h1 className="text-lg text-slate-100 font-semibold">{project.title} </h1>
+                        <h1 className="text-lg md:text-xl text-slate-100 font-semibold">{project.title} </h1>
                         <div>{navigateTo(project.git)}</div>
                     </div>
 
@@ -64,8 +64,8 @@ export const ProjectCardTwo = ({project}: propData) => {
                     })}
                 </div>
 
-                <div className="my-3.5">
-                    <h1 className="text-white leading-6">{project.description} </h1>
+                <div className="my-3.5 md:my-5">
+                    <h1 className="text-white md:text-[1rem] leading-6">{project.description} </h1>
                 </div>
 
                 <div className="break-all">

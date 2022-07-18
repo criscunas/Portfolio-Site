@@ -1,11 +1,10 @@
 import { getAllPosts } from "../lib/api";
-import MyBlogs from "../src/components/MyBlogs/MyBlogs";
 import { GetStaticProps } from "next";
 import { AboutHomepage } from "../src/Homepage/AboutHomepage";
 import { ProjectsHomepage } from "../src/Homepage/ProjectsHomepage";
 import { BlogsHomepage } from "../src/Homepage/BlogsHomepage";
 
-export const getStaticProps: GetStaticProps = async(context) => {
+export const getStaticProps: GetStaticProps = async() => {
         const allPosts = getAllPosts([
         "title",
         "date",

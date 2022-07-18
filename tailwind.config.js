@@ -12,7 +12,7 @@ module.exports = {
                 Inter: ["Inter", ...defaultTheme.fontFamily.sans],
             },
             screens: {
-                'sm' : {'max' : '450px'}
+                'sm' : {'max' : '450px'} ,
             },
         },
     },

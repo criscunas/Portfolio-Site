@@ -5,10 +5,10 @@ import Link from "next/link";
 
 export const AboutHomepage = () => {
     return (
-        <div className="mt-6">
+        <div className="mt-6 md:mt-8">
             <div className="text-white flex flex-col gap-2 text-center">
                 <h1 className="text-2xl font-semibold">hey i'm cris <span role="img" aria-label="thumbs-up">👋 </span></h1>
-                <p className="text-md">Software Engineer</p>
+                <p className="text-md md:mt-1.5">Software Engineer</p>
             </div>
 
             <div className="mt-6 flex justify-center items-center divide-x-4">
@@ -44,8 +44,9 @@ export const AboutHomepage = () => {
                     <h1 className="text-slate-100 text-2xl tracking-wider underline decoration-white underline-offset-4">Bio</h1>
                     <div className='rounded-sm mt-3.5 py-4'>
                         <h1 className="text-[1rem] leading-7 text-white">Full Stack Developer based out of Newark, NJ.
-                            Currently an intern @ Streamforge. Primarily working
-                            with Javascript. Always learning & looking for ways to better my craft.
+                            Currently a intern @ Streamforge. Primarily working
+                            with Javascript. Favorite frameworks include Vue & Next.
+                            Always learning & looking for ways to better my craft.
                         </h1>
                     </div>
                 </div>
@@ -53,8 +54,8 @@ export const AboutHomepage = () => {
                 <div className="my-4 md:grid grid-cols-2 text-white md:my-6">
                     <div>
                         <h1 className="text-2xl tracking-wider underline underline-offset-8">Frontend</h1>
-                        <div className='my-6'>
-                            <div className="mb-2 flex justify-center divide-x-4 divide-cyan-400">
+                        <div className='my-6 md:mt-8'>
+                            <div className="mb-2 md:mb-4 flex justify-center divide-x-4 divide-cyan-400">
                                 <p className="px-2 text-lg">Vue</p>
                                 <p className="px-2 text-lg">React</p>
                                 <p className="px-2 text-lg">Next</p>
@@ -69,8 +70,8 @@ export const AboutHomepage = () => {
 
                     <div>
                         <h1 className="text-2xl underline tracking-wider underline-offset-8">Backend</h1>
-                        <div className="mt-6">
-                        <div className="mb-2 flex justify-center divide-x-4 divide-cyan-400">
+                        <div className="mt-6 md:mt-8">
+                        <div className="mb-2 md:mb-4 flex justify-center divide-x-4 divide-cyan-400">
                             <p className="px-2 text-lg">Node</p>
                             <p className="px-2 text-lg">Express</p>
                             <p className="px-2 text-lg">SQL</p>

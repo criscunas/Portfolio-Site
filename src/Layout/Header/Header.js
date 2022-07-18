@@ -6,7 +6,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import Typewriter from "typewriter-effect";
 
 export default function Header() {
     const [anchorEl, setAnchorEl] = useState(null);
@@ -21,25 +20,7 @@ export default function Header() {
 
     return (
         <div className="py-4 flex justify-between items-center">
-            <h2
-            className="font-semibold flex items-center text-lg text-[#E1C37A]">
-                <Typewriter
-                    options={{
-                        strings: [
-                            "criscunas.dev",
-                            "Welcome to my page ",
-                            "View my work",
-                            "Or read my blog",
-                            "it's ok if u dont ....",
-                            "Have a great day ! ",
-                        ],
-                        autoStart: true,
-                        loop: true,
-                        deleteSpeed: 8,
-                        pauseFor: "5000ms",
-                    }}
-                />
-            </h2>
+            <h2 className="font-semibold flex items-center text-lg text-[#E1C37A]">criscunas.dev</h2>
             <div className={headerStyles.header__hamburger}>
                 <Button
                     id="fade-button"

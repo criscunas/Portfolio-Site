@@ -1,4 +1,4 @@
-import DateFormatter from '../../lib/date-formatter'
+import DateFormatter from '../../../lib/date-formatter'
 import {useRouter} from 'next/router';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
@@ -23,7 +23,7 @@ export const BlogsCard = ({card} : propData) => {
             <div className="flex items-center justify-between">
                 <DateFormatter dateString={card.date} />
                 <button className="bg-blue-500 hover:bg-blue-600 rounded px-1.5 py-1 flex items-center gap-2"
-                    onClick={() => Router.push('')}>
+                    onClick={() => Router.push(`posts/${card.slug}`)}>
                     <span className="font-semibold text-md text-white">Read</span>
                 </button>
             </div>

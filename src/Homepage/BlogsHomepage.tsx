@@ -1,4 +1,4 @@
-import {BlogsCard} from '../../src/components/BlogsCard';
+import {BlogsCard} from '../components/cards/BlogsCard';
 
 type propData = {
     blogs : {

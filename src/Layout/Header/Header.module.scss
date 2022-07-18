@@ -1,5 +1,5 @@
-@use '../../../styles/mixins.scss' as *;
 @use "../../../styles/variables.scss" as *;
+@use '../../../styles/mixins.scss' as *;
 
 .header {
     padding: 1rem 0 1.5rem;
@@ -62,11 +62,13 @@
         color: white;
         display: none;
 
-
-
         ul {
             display: flex;
             gap: 0.5rem;
+        }
+
+        @include beforeTablet {
+            display: block;
         }
     }
 
