@@ -1,17 +1,20 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  content: [
-    './pages/**/*.{js,ts,jsx}',
-    './src/components/**/*.{js,ts,jsx,tsx}',
-  ],
-  theme: {
-    screens : {
-      profile: "350px",
-      smallTablet: "600px",
-      midpoint: "900px",
-      desktop: "1280px"
-
+    content: [
+        "./pages/**/*.{js,ts,jsx,tsx}",
+        "./src/components/**/*.{js,ts,jsx,tsx}",
+        "./src/**/*.{js,ts,tsx,jsx}"
+    ],
+    theme: {
+        extend: {
+            fontFamily: {
+                Inter: ["Inter", ...defaultTheme.fontFamily.sans],
+            },
+            screens: {
+                'sm' : {'max' : '450px'} ,
+            },
+        },
     },
-  },
-  plugins: [],
-}
+    plugins: [],
+};

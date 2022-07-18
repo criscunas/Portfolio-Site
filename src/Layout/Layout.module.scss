@@ -1,4 +1,4 @@
-@use '../../../styles/mixins.scss' as *;
+@use '../../styles/mixins.scss' as *;
 
 .layout {
   background-color: #202023;
@@ -13,8 +13,8 @@
 
   &__content {
     margin: 1rem;
-    
-    
+
+
     @include tablet {
       margin: 1.5rem ;
     }
