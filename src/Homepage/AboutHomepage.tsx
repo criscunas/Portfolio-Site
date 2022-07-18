@@ -44,9 +44,9 @@ export const AboutHomepage = () => {
                     <h1 className="text-slate-100 text-2xl tracking-wider underline decoration-white underline-offset-4">Bio</h1>
                     <div className='rounded-sm mt-3.5 py-4'>
                         <h1 className="text-[1rem] leading-7 text-white">Full Stack Developer based out of Newark, NJ.
-                            Currently a intern @ Streamforge. Primarily working
+                            Currently a Software Engineer intern @ Streamforge. Primarily working
                             with Javascript. Favorite frameworks include Vue & Next.
-                            Always learning & looking for ways to better my craft.
+                            Always learning & looking for ways to better my skills.
                         </h1>
                     </div>
                 </div>
