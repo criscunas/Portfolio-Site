@@ -1,19 +1,17 @@
-@use '../styles/mixins.scss'as *;
+@use "../styles/mixins.scss" as *;
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 html {
-  background-color: #202023;
+    background-color: #202023;
 }
 canvas {
-  height: 250px !important;
+    height: 250px !important;
 
-  @include beforeTablet {
-    height: 330px !important;
-  }
-  
+    @include beforeTablet {
+        height: 330px !important;
+    }
 }
 
 h1,
@@ -24,76 +22,73 @@ li,
 h5,
 h6,
 p {
-  font-family: 'Inter',
-  sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
-
 .swiper {
-  height: fit-content;
+    height: fit-content;
 }
 
 .swiper-slide {
-  text-align: center;
-  background-color: #202023;
-  margin-bottom: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+    text-align: center;
+    background-color: #202023;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
 
 .swiper-slide img {
-  display: block;
-  width: 100%;
-  height:600px;
-  object-fit: contain;
+    display: block;
+    width: 100%;
+    height: 600px;
+    object-fit: contain;
 }
 
 @layer components {
-  .project {
-    @apply m-auto
-  }
-  .project-main {
-    @apply max-w-3xl
-  }
-  .project-header {
-    @apply pt-6 smallTablet:pt-8
-  }
-  .project-title {
-    @apply text-white font-semibold text-4xl pb-2 smallTablet:pb-4
-  }
-  .project-link {
-    @apply text-[#ED0707] text-lg 
-  }
-  .project-description {
-    @apply text-white text-lg pt-6 font-semibold smallTablet:text-xl
-  }
-  .project-note {
-    @apply text-base text-[#f5deb3] pt-4
-  }
-  .project-about {
-    @apply mt-4 smallTablet:mb-6
-  }
-  .project-about_title {
-    @apply py-4 text-xl text-white font-semibold smallTablet:text-xl 
-  }
-  .project-about_subhead {
-    @apply text-white text-base smallTablet:text-lg
-  }
-  .project-list {
-    @apply py-6 smallTablet:grid grid-cols-2 gap-x-3 gap-y-3 smallTablet:py-8
-  }
-  .project-list_item {
-    @apply text-white text-base mb-4
-  }
-
+    .project {
+        @apply m-auto;
+    }
+    .project-main {
+        @apply max-w-3xl;
+    }
+    .project-header {
+        @apply pt-6 sm:pt-8;
+    }
+    .project-title {
+        @apply text-white font-semibold text-4xl pb-2 sm:pb-4;
+    }
+    .project-link {
+        @apply text-[#ED0707] text-lg;
+    }
+    .project-description {
+        @apply text-white text-lg pt-6 font-semibold sm:text-xl;
+    }
+    .project-note {
+        @apply text-base text-[#f5deb3] pt-4;
+    }
+    .project-about {
+        @apply mt-4 sm:mb-6;
+    }
+    .project-about_title {
+        @apply py-4 text-xl text-white font-semibold sm:text-xl;
+    }
+    .project-about_subhead {
+        @apply text-white text-base sm:text-lg;
+    }
+    .project-list {
+        @apply py-6 sm:grid grid-cols-2 gap-x-3 gap-y-3 sm:py-8;
+    }
+    .project-list_item {
+        @apply text-white text-base mb-4;
+    }
 }
